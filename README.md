@@ -206,4 +206,4 @@ SOFTWARE.
 
 ## Contact
 
-For questions or support, please open an issue on this repository or contact [your-email@example.com](mailto:your-email@example.com).
+For questions or support, please open an issue on this repository or contact [reubingeorge@usf.edu](mailto:reubingeorge@usf.edu).
