@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 (FIGO IA)",
+  "recommended_treatment": "Adjuvant vaginal cuff brachytherapy per NCCN guidelines for stage IA, grade 3 endometrioid endometrial carcinoma",
+  "description": "Surgical pathology of a hysterectomy specimen reveals a 5.0\u00d72.7 cm grade 3 endometrioid adenocarcinoma of the endometrium with 0.7 cm myometrial invasion (2.8 cm thickness), focal lymphovascular invasion, negative cervical, serosal, parametrial margins, and negative pelvic and para-aortic lymph nodes (pT1a pN0, FIGO IA).",
+  "patient_notes": "Your report shows a high-grade endometrial cancer confined to the inner layer of the uterus, with no cancer spread to nearby lymph nodes. We recommend a targeted internal radiation treatment (vaginal brachytherapy) to lower the chance of recurrence. This treatment is well tolerated and focuses radiation where it\u2019s most needed. Participation in a clinical trial is also an option you may discuss with your care team.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.92,
+    "assessment": "The extraction is complete and accurate. All key diagnostic data, staging, and treatment recommendation align with the source pathology report and NCCN guidance for stage IA, grade 3 endometrioid endometrial carcinoma."
+  }
+}

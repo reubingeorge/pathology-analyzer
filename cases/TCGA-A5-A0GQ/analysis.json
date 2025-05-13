@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "FIGO_stage": "Stage IB, Grade 1",
+  "final_pathologic_stage": "pT1c/pN0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IB, Grade 1 endometrioid carcinoma (observation alone may be considered as an alternative).",
+  "description": "Surgical pathology shows a FIGO Grade 1 endometrioid adenocarcinoma of the endometrium with invasion of approximately one-half of the myometrium, no lymphovascular invasion, and negative pelvic lymph nodes (pT1c/pN0).",
+  "patient_notes": "Your surgery removed the uterus, tubes, ovaries, and nearby lymph nodes and confirmed a low-grade endometrial cancer confined to the uterus. Because the tumor invaded halfway into the muscle layer but did not spread to nodes, we recommend a targeted vaginal radiation treatment to lower the chance of recurrence. This treatment is well tolerated and focuses on the area at risk. Observation without additional therapy is also an option but may carry a slightly higher risk of local return.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.95,
+    "assessment": "The extraction accurately captures organ, histologic subtype, grade, stage, pathologic parameters, and appropriate NCCN-aligned treatment recommendation. No significant omissions or errors detected."
+  }
+}

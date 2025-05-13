@@ -1,0 +1,15 @@
+# Core dependencies
+numpy
+tqdm
+tenacity
+openai
+tiktoken
+
+# PDF processing libraries (at least one is required)
+PyMuPDF
+pdfplumber
+PyPDF2
+
+# Optional: OCR support (for scanned PDFs)
+pillow
+pytesseract

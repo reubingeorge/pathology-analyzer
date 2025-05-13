@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IIIC1",
+  "Final Pathologic Stage": "pT1a pN1 pM0",
+  "Recommended Treatment": "Following total hysterectomy with bilateral salpingo-oophorectomy, NCCN guidelines recommend adjuvant combined modality therapy for stage IIIC1 high-grade endometrioid carcinoma: external beam pelvic radiation therapy with or without vaginal brachytherapy plus systemic chemotherapy (carboplatin and paclitaxel).",
+  "Description": "High-grade (grade 3) endometrioid adenocarcinoma of the uterine corpus measuring 5.0 cm with invasion of less than half the myometrium and negative margins; one of eleven right pelvic lymph nodes positive for metastatic carcinoma (pT1a, pN1). No cervical, adnexal, or distant spread identified.",
+  "Patient Notes": "Your pathology shows a high-grade uterine cancer that was confined to the uterus but spread to one pelvic lymph node. The surgery removed the uterus, ovaries, tubes, and nearby tissues with clear margins. Because a lymph node was involved, your care team recommends radiation to the pelvis (and possibly a vaginal boost) together with chemotherapy using carboplatin and paclitaxel. This combined approach is standard to reduce the risk of cancer returning.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extracted data accurately reflects the pathology report and aligns with NCCN guidelines. No corrections needed."
+  }
+}

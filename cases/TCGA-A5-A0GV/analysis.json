@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IA",
+  "Final Pathologic Stage": "pT1b N0 M0",
+  "Recommended Treatment": "Surveillance (no adjuvant therapy) per NCCN guidelines for stage IA, grade 1 endometrioid endometrial carcinoma following TH/BSO",
+  "Description": "Pathology reveals a FIGO grade 1 endometrioid adenocarcinoma of the uterus with superficial myometrial invasion (<50%), negative cervical margins, and no lymph node or adnexal involvement.",
+  "Patient Notes": "Your report shows a low-grade uterine cancer that was confined to the inner lining and only superficially invaded the muscle of your uterus. No cancer was found in the lymph nodes or other reproductive organs. Because it\u2019s a stage IA, grade 1 tumor, you have a very low risk of recurrence, and no additional treatment is needed beyond regular follow-up visits. We will schedule routine check-ups to monitor your health moving forward.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extraction accurately captures the primary diagnosis, staging, and management recommendation. A few ancillary details\u2014tumor size, grade specifics, LVSI quantification\u2014were not extracted but do not affect core decision-making."
+  }
+}

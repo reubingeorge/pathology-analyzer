@@ -1,0 +1,58 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IA",
+  "Final Pathologic Stage": "pT1a pNx M0",
+  "Recommended Treatment": "Observation; vaginal brachytherapy may be offered as an option per NCCN guidelines for low-risk stage IA, grade 1 endometrioid carcinoma",
+  "Description": "The report documents a FIGO grade 1 endometrioid adenocarcinoma confined to the uterus with minimal (<10%) myometrial invasion, no lymphovascular invasion, and no cervical, ovarian, or parametrial involvement. Although there is uncertain mucosal involvement of the right fallopian tube, the extent of disease remains consistent with stage IA.",
+  "Patient Notes": "Your pathology shows a low-grade endometrial cancer that was removed completely with minimal invasion into the muscle layer and no spread to other pelvic structures. This places you in a very low-risk category, so additional treatment beyond surgery is typically not needed. We may offer a small internal radiation treatment (vaginal brachytherapy) to reduce any tiny remaining risk, but close follow-up and regular check-ups are the main plan. Please let us know if you have any questions or concerns about this approach.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.75,
+    "assessment": "Key staging elements (fallopian tube involvement) were overlooked, leading to an incorrect FIGO and pathologic stage and, consequently, an inappropriate low-risk treatment recommendation. Extraction quality is therefore unacceptable without correction.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": false,
+        "confidence": 0.6,
+        "issues": "Extracted as IA, but the report describes clear mucosal involvement of the right fallopian tube by endometrioid carcinoma, which by FIGO 2009 staging upgrades to stage IIIA."
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.6,
+        "issues": "pT1a pNx M0 ignores extrauterine (fallopian tube) disease. Tubal mucosal involvement corresponds to pT3a in FIGO/TNM."
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.65,
+        "issues": "Recommendation is for low-risk IA; with tubal involvement (IIIA), NCCN guidelines would call for pelvic radiation \u00b1 vaginal brachytherapy and consideration of chemotherapy."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.7,
+        "issues": "Omits the key finding of fallopian tube involvement and the resultant stage IIIA classification; oversimplifies grading (nuclear grade 2 noted in report)."
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.7,
+        "issues": "Portrays a low-risk IA scenario without mentioning the uncertain but documented tubal involvement that upstages to IIIA and alters adjuvant recommendations."
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "pathologic_stage",
+      "recommended_treatment",
+      "description",
+      "patient_notes"
+    ]
+  }
+}

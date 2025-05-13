@@ -1,0 +1,54 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "IIC",
+  "Final Pathologic Stage": "pT2b N1 Mx",
+  "Recommended Treatment": "Adjuvant carboplatin\u2013paclitaxel chemotherapy (\u00b1 trastuzumab if HER2-positive) plus pelvic external beam radiation therapy and vaginal brachytherapy per NCCN guidelines for node-positive uterine serous carcinoma.",
+  "Description": "Surgical pathology demonstrates a 4.5 cm papillary serous adenocarcinoma of the uterus with deep (outer half) myometrial invasion, endocervical stromal involvement, lymphovascular invasion, and multiple positive regional lymph nodes, staged pT2b N1 Mx (FIGO IIC).",
+  "Patient Notes": "The pathology report shows a high-grade serous cancer in the uterus that extended into the muscle layer and nearby lymph nodes. To reduce the chance of recurrence, you will receive chemotherapy with carboplatin and paclitaxel, possibly with trastuzumab if your tumor is HER2-positive, along with targeted radiation to the pelvic area and vaginal cuff.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.85,
+    "assessment": "Extraction is largely accurate and comprehensive but contains a single key error in the description of the depth of myometrial invasion; otherwise fields align with the report and NCCN guidance.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": "Recommendation is consistent with NCCN node-positive uterine serous carcinoma guidelines; no omissions."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "States 'deep (outer half) myometrial invasion' but the report documents tumor invasion of the inner half of the myometrium."
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "description"
+    ]
+  }
+}

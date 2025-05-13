@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "Stage IIIA",
+  "Final Pathologic Stage": "pT3a pN0 pM0",
+  "Recommended Treatment": "Adjuvant combination of chemotherapy (carboplatin/paclitaxel) and radiation therapy (pelvic external beam radiation and vaginal brachytherapy) per NCCN guidelines for stage III endometrial carcinoma.",
+  "Description": "Surgical pathology reveals FIGO grade 3 endometrioid adenocarcinoma of the uterus with full\u2010thickness myometrial invasion, serosal penetration, lymphovascular and perineural invasion, and tumor involvement of the intrauterine fallopian tube, with no nodal metastases, corresponding to stage IIIA (pT3a pN0).",
+  "Patient Notes": "This report shows that you have a high\u2010grade endometrial cancer that extended through the muscle of your uterus to its outer surface but was not found in the lymph nodes. To lower the risk of the cancer coming back, your care team recommends a combination of chemotherapy with carboplatin and paclitaxel plus radiation treatments, including both pelvic radiation and a vaginal brachytherapy boost. This treatment plan follows national guidelines for your specific cancer stage and type.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extracted data accurately reflects the key pathologic findings, stage grouping, and guideline\u2010based treatment recommendation for high\u2010grade endometrioid adenocarcinoma with serosal and adnexal involvement."
+  }
+}

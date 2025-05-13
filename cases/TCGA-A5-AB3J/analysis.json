@@ -1,0 +1,59 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "II",
+  "Final Pathologic Stage": {
+    "pT": "pT2",
+    "pN": "pN0",
+    "pM": "pM0"
+  },
+  "Recommended Treatment": "Total hysterectomy and bilateral salpingo-oophorectomy with pelvic lymph node evaluation (completed) followed by adjuvant pelvic external beam radiotherapy with consideration of vaginal brachytherapy in accordance with NCCN guidelines for Stage II, grade 2 endometrioid endometrial carcinoma.",
+  "Description": "Resection specimens show synchronous endometrioid adenocarcinomas of the uterus and left ovary, with the uterine tumor graded FIGO 2 involving superficial myometrium and endocervical stroma (pT2, pN0). Lymphovascular invasion is indeterminate and all sampled pelvic and para-aortic nodes are negative.",
+  "Patient Notes": "This report confirms that your uterine cancer was completely removed with surgery and that it is a moderately differentiated (grade 2) endometrioid tumor that extended slightly into the cervical stroma. No cancer was found in the lymph nodes. To lower the chance of the cancer coming back, we recommend follow-up radiation therapy to the pelvis, which may include a small, targeted internal treatment (brachytherapy). Your care team will review the details and schedule your radiation sessions soon.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.8,
+    "assessment": "Key uterine carcinoma elements and treatment recommendations were correctly extracted, but the synchronous ovarian primary was omitted and an unreported M0 status was assumed.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "The report describes synchronous primary tumors in both the uterus and left ovary. Extracted field lists only uterine cancer."
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.6,
+        "issues": "The extraction includes pM0, but the pathology report does not document M classification or metastatic status."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "cancer_organ_type",
+      "pathologic_stage"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Mixed high-grade carcinoma (serous, clear cell, and undifferentiated features)",
+  "FIGO Stage": "IB",
+  "Final Pathologic Stage": "pT1b, N0, MX",
+  "Recommended Treatment": "Adjuvant systemic chemotherapy with carboplatin and paclitaxel, with consideration of external beam pelvic radiation therapy and vaginal brachytherapy following total hysterectomy and surgical staging.",
+  "Description": "Surgical pathology of a total abdominal hysterectomy and bilateral salpingo-oophorectomy reveals a primary high-grade uterine carcinoma with serous, clear cell, and undifferentiated/anaplastic features replacing the endometrium and invading over 80% of the myometrium, with lymphovascular invasion but no lymph node metastases. Pathologic staging is pT1b, N0, MX corresponding to FIGO stage IB.",
+  "Patient Notes": "Your surgery removed the uterus, ovaries, and fallopian tubes, and the lab results show a high-grade cancer that grew deep into the uterine muscle but did not spread to the lymph nodes. To reduce the risk of the cancer coming back, we recommend chemotherapy with carboplatin and paclitaxel, and you may also receive targeted radiation treatments to the pelvis and vaginal area. This follow-up treatment helps destroy any remaining cancer cells and improve long-term outcomes. Please discuss the plan and any side effects with your care team.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.95,
+    "assessment": "The extracted data accurately reflects the pathology report and aligns with NCCN guidance for stage IB high-grade uterine carcinoma."
+  }
+}

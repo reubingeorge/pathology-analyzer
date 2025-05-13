@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA, Grade 1",
+  "final_pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, grade 1 endometrioid endometrial carcinoma without lymphovascular invasion",
+  "description": "The surgical pathology reveals a well-differentiated (FIGO grade 1) endometrioid adenocarcinoma confined to the endometrium with no myometrial or lymphovascular invasion; all examined lymph nodes and pelvic washings are negative, corresponding to AJCC stage pT1a pN0.",
+  "patient_notes": "Your report shows an early-stage cancer of the uterine lining that is low grade and has not spread beyond the inner layer or to lymph nodes. No additional treatments like radiation or chemotherapy are needed at this time. We will monitor you with regular follow-up visits and imaging as recommended by guideline-based care.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.92,
+    "assessment": "The extracted data accurately reflects the final pathology report and aligns with NCCN recommendations. No substantive errors were found."
+  }
+}

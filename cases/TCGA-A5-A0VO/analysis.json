@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IB",
+  "final_pathologic_stage": "pT1b pN0 pM0",
+  "recommended_treatment": "Adjuvant radiation therapy with vaginal brachytherapy (\u00b1 external beam radiation therapy) per NCCN guidelines for Stage IB, grade 2 endometrioid adenocarcinoma with LVSI.",
+  "description": "Endometrial endometrioid adenocarcinoma, papillary variant, FIGO grade II, with tumor invading more than half the myometrium (stage IB, pT1b pN0). No cervical or nodal metastases identified; vascular invasion present.",
+  "patient_notes": "The report shows that you have an endometrial adenocarcinoma that has grown into the muscular layer of the uterus but has not spread to lymph nodes or other organs. This is classified as stage IB, which means deeper invasion but no distant spread. To reduce the chance of recurrence, we recommend targeted radiation inside the vagina (brachytherapy), and sometimes external beam radiation, following your surgery. These treatments aim to eliminate any remaining cancer cells in the pelvic area.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.95,
+    "assessment": "The extracted data accurately reflect the pathology report and align with NCCN guidance. Only minor inference (pM0) was made but is standard in this context."
+  }
+}

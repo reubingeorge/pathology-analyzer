@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "IIIC2",
+  "Final Pathologic Stage": "pT3a N2 M0",
+  "Recommended Treatment": "Adjuvant combination chemotherapy with carboplatin and paclitaxel plus external beam pelvic radiotherapy (with or without vaginal brachytherapy) per NCCN guidelines for stage IIIC2 uterine serous carcinoma. Consider HER2 testing and addition of trastuzumab if HER2 overexpression is confirmed.",
+  "Description": "High-grade serous endometrial adenocarcinoma measuring 3\u2009cm with >50% myometrial invasion, extensive lymphovascular invasion, parametrial and para-aortic nodal metastases, staged pT3a N2 (FIGO IIIC2).",
+  "Patient Notes": "Your pathology shows a high-grade serous cancer of the lining of the uterus that has invaded the muscle layer deeply and involves nearby lymph nodes. You have already had surgery to remove the uterus, ovaries, fallopian tubes, omentum, and lymph nodes. The next step according to NCCN guidelines is a combination of chemotherapy (two drugs called carboplatin and paclitaxel) and targeted radiation to the pelvis, with possible vaginal radiation. We will also test your tumor for HER2 to see if an additional drug called trastuzumab may help.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "Extraction is accurate and complete; the only minor note is that M0 is implicitly assumed rather than explicitly stated."
+  }
+}

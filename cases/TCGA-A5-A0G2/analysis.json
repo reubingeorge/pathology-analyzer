@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "IIIA",
+  "Final Pathologic Stage": "pT3a N0 Mx",
+  "Recommended Treatment": "Adjuvant systemic chemotherapy with carboplatin and paclitaxel in combination with external beam pelvic radiation therapy, with consideration of vaginal brachytherapy per NCCN guidelines for Stage III uterine serous carcinoma.",
+  "Description": "High-grade serous adenocarcinoma of the endometrium with invasion to the uterine serosa and parametrial tissues (pT3a N0 Mx), consistent with FIGO Stage IIIA.",
+  "Patient Notes": "Your report shows a high-grade uterine cancer that has spread to the outer surface of the uterus but not to the lymph nodes.  The recommended treatment is a combination of chemotherapy (carboplatin and paclitaxel) and radiation therapy, with a possible vaginal radiation boost, to help reduce the risk of the cancer returning.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction faithfully captures the key diagnostic, staging, and treatment information from the pathology report and aligns with NCCN recommendations."
+  }
+}

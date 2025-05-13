@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "Stage IA (FIGO)",
+  "final_pathologic_stage": "pT1a pN0 M0",
+  "recommended_treatment": "Total hysterectomy with bilateral salpingo-oophorectomy already performed; no additional adjuvant therapy is required for Stage IA, grade 2 endometrioid carcinoma without substantial LVSI; consider vaginal brachytherapy or observation per NCCN guidelines.",
+  "description": "This surgical pathology report describes a 5.7 cm endometrioid endometrial adenocarcinoma, FIGO grade 2, with invasion of less than half the myometrium (0.2 cm of 1.7 cm), negative cervical and adnexal involvement, and no lymph node metastases (pT1a pN0). The specimen margins are uninvolved and lymphovascular invasion is indeterminate.",
+  "patient_notes": "Your pathology report shows an early-stage endometrial cancer (stage IA) that was completely removed by surgery, and no cancer was found in the lymph nodes. Based on current NCCN guidelines, no further treatment is generally needed, though a low-dose vaginal radiation may be offered to reduce the risk of local recurrence. We will continue to follow you with regular visits and imaging to ensure your continued health and address any concerns.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment\u2010planning elements. Minor assumptions (FIGO staging term and M0) are reasonable but could be noted explicitly."
+  }
+}

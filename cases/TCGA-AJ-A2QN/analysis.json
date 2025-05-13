@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "Stage IIB",
+  "final_pathologic_stage": "pT2 N0 M0",
+  "recommended_treatment": "Adjuvant pelvic external beam radiation therapy with vaginal brachytherapy per NCCN guidelines for Stage II endometrioid carcinoma; consider addition of systemic chemotherapy (carboplatin/paclitaxel) in the presence of high-risk features (deep myometrial invasion, LVSI, grade 2).",
+  "description": "Moderately to poorly differentiated endometrioid carcinoma diffusely involves the uterine cavity with near\u2013full-thickness myometrial invasion and cervical stromal involvement, negative margins, and no nodal metastases (pT2 N0).",
+  "patient_notes": "The surgical pathology shows endometrial cancer that grew through most of the uterine wall and into the cervical tissue, but no cancer was found in the lymph nodes. To reduce the risk of recurrence, you will receive radiation to the pelvis along with targeted radiation inside the vagina. Because there are some high-risk features, we may also discuss adding chemotherapy to your treatment plan. We will review what to expect and support you through each step.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The key fields were accurately and consistently extracted with no substantive errors. Additional pathologic details (grade, depth of invasion, LVSI, tumor size) could enhance the completeness but do not affect the core staging and treatment recommendations."
+  }
+}

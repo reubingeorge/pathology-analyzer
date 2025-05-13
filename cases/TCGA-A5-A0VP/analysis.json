@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "FIGO Stage IA, Grade 3",
+  "final_pathologic_stage": "pT1a pN0 (M0 presumed)",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA, grade 3 endometrioid endometrial carcinoma",
+  "description": "High\u2010grade (FIGO grade 3) endometrioid adenocarcinoma of the uterine corpus, confined to the endometrium with <50% myometrial invasion (pT1a), no lymphovascular invasion, and negative lymph nodes (pN0).",
+  "patient_notes": "The report shows a high\u2010grade cancer of the lining of your uterus that is small and has not spread beyond the uterus or to lymph nodes (Stage IA). You have already had surgery to remove the uterus, cervix, tubes, and ovaries. To lower the chance of cancer returning, the team recommends targeted radiation delivered inside the vagina (vaginal brachytherapy). Your care team will discuss scheduling and any side effects to watch for.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extraction accurately captures the key diagnostic and staging elements and offers an appropriate treatment recommendation. Consider adding tumor size, margin status, and ancillary findings for completeness."
+  }
+}

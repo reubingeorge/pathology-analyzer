@@ -1,0 +1,55 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IA",
+  "Final Pathologic Stage": "pT1b, pN0",
+  "Recommended Treatment": "Observation without adjuvant therapy per NCCN guidelines for Stage IA, grade 1 endometrioid carcinoma",
+  "Description": "A grade 1 endometrioid adenocarcinoma involving the corpus, fundus, and lower uterine segment with invasion into the inner half of the myometrium, no lymphovascular invasion, and negative pelvic lymph nodes, consistent with Stage IA disease.",
+  "Patient Notes": "Your pathology report shows a low-grade uterine cancer that was confined to the inner layer of the uterine muscle and did not spread to lymph nodes. The surgery removed the tumor completely, and because it is stage IA with favorable features, no additional treatment is recommended. You will have regular follow-up visits to monitor your recovery and ensure there are no changes.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.85,
+    "assessment": "Except for the mismatch between the extracted FIGO stage and the reported pT1b designation (with downstream impact on treatment), the extraction is accurate and complete.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Extracted FIGO stage IA is inconsistent with the reported pathologic T stage (pT1b corresponds to FIGO IB)."
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.75,
+        "issues": "Recommendation of observation is appropriate for Stage IA, but if the true pathologic stage is IB (pT1b), NCCN guidelines suggest consideration of adjuvant vaginal brachytherapy for grade 1 IB tumors."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "recommended_treatment"
+    ]
+  }
+}

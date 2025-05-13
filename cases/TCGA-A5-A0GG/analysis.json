@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IA",
+  "Final Pathologic Stage": "pT1a N0 M0",
+  "Recommended Treatment": "No adjuvant therapy; surveillance per NCCN guidelines for stage IA (grade 2) endometrioid endometrial carcinoma without lymphovascular invasion",
+  "Description": "Endometrial biopsy and hysterectomy specimens reveal FIGO grade 2 endometrioid adenocarcinoma with minimal (<10%) myometrial invasion, negative lymph nodes (0/18), and no extrauterine spread.",
+  "Patient Notes": "Your report shows a cancer in the lining of your uterus (endometrioid endometrial carcinoma) that is low-stage and was fully removed by surgery. The tumor only invaded a small portion of the uterine muscle and no cancer was found in the lymph nodes. Because of these favorable findings, national guidelines recommend no additional treatment at this time, only regular follow-up exams.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction is accurate in diagnosis, staging, and treatment recommendation. There is a minor discrepancy in the lymph node count in the description field and omission of the reported minor neuroendocrine component."
+  }
+}

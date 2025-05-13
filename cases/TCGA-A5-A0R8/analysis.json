@@ -1,0 +1,14 @@
+{
+  "Cancer_Organ_Type": "Uterine cancer",
+  "Cancer_Subtype": "Endometrioid adenocarcinoma",
+  "FIGO_Stage": "Stage IB (FIGO)",
+  "Final_Pathologic_Stage": "pT1b pN0 (no nodal metastasis)",
+  "Recommended_Treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IB, grade 2 endometrioid carcinoma with lymphovascular invasion. Pelvic EBRT may be considered in select intermediate-risk cases.",
+  "Description": "The specimen shows a FIGO grade 2 endometrioid adenocarcinoma of the uterine corpus measuring approximately 3.8 \u00d7 3.5 \u00d7 3.5 cm with >50% myometrial invasion (pT1b) and no lymph node metastases (pN0). Lymphovascular invasion is present and all margins are negative.",
+  "Patient_Notes": "Your pathology report confirms endometrial cancer that measured about 4 cm and invaded half of the uterine muscle but did not spread to lymph nodes. The cancer was completely removed with clear margins, but small vessels contained tumor cells (lymphovascular invasion). To lower the risk of it returning, we recommend vaginal brachytherapy\u2014targeted radiation delivered inside the vagina. This treatment is standard for your stage and tumor characteristics according to NCCN guidelines.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.92,
+    "assessment": "Extraction accurately captured the key pathologic findings and stage. Treatment recommendation aligns with NCCN guidance for Stage IB, grade 2 endometrioid carcinoma with lymphovascular invasion. No substantive omissions or errors detected."
+  }
+}

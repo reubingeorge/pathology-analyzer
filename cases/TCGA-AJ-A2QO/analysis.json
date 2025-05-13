@@ -1,0 +1,57 @@
+{
+  "cancer_organ_type": "Endometrial cancer",
+  "cancer_subtype": "Not specified in provided report (microscopic review needed)",
+  "figo_stage": "IB",
+  "final_pathologic_stage": "pT1b N0 M0",
+  "recommended_treatment": "Adjuvant radiation therapy with vaginal brachytherapy or pelvic external beam radiation therapy\u2009\u00b1\u2009vaginal brachytherapy",
+  "description": "Friable granular endometrial lesion measuring 3.5 \u00d7 3.3 \u00d7 0.9 cm with >50% myometrial invasion (2.4 cm of 4.7 cm), negative parametria, and 0/17 lymph nodes involved; consistent with FIGO IB (pT1b N0).",
+  "patient_notes": "The surgical pathology confirms endometrial carcinoma measuring 3.5 \u00d7 3.3 \u00d7 0.9 cm with deep myometrial invasion but no nodal metastases. To reduce recurrence risk, we recommend adjuvant radiation therapy\u2014either vaginal brachytherapy alone or combined pelvic external beam radiation with a brachytherapy boost. Further pathology details, including grade and LVSI status, will guide final recommendations.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.78,
+    "assessment": "The extraction captured stage and treatment recommendation correctly but introduced unsupported details (tumor size, subtype, LVSI) and omitted key pathologic elements. Substantial corrections needed before use.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "The report specifies 'Endometrial cancer'; the extracted 'Uterine cancer' is too generic. It should be Endometrial (uterine corpus) cancer."
+      },
+      "cancer_subtype": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "The snippet provided does not explicitly state 'endometrioid adenocarcinoma.' Without a microscopic subtype in the text, assignment of subtype is unsupported."
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "FIGO IB is correct given >50% myometrial invasion (2.4 cm of 4.7 cm thickness)."
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "pT1b N0 M0 corresponds to FIGO IB with no nodal metastasis; M0 is assumed."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": "Adjuvant radiation with vaginal brachytherapy \u00b1 pelvic EBRT is consistent with NCCN guidance for stage IB high\u2013intermediate/high-risk disease."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Tumor dimensions are misstated as 3.5 \u00d7 3.3 \u00d7 1.6 cm; gross report gives 3.5 \u00d7 3.3 \u00d7 0.9 cm. LVSI is asserted but not in the provided text. Lymph node count (0/18) may not match the nodes described."
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.85,
+        "issues": "Notes mirror the flawed description (incorrect size, unverified LVSI). They should reflect the accurate measurements and reported findings."
+      }
+    },
+    "incorrect_fields": [
+      "cancer_organ_type",
+      "cancer_subtype",
+      "description",
+      "patient_notes"
+    ]
+  }
+}

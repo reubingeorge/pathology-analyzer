@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "FIGO_stage": "Stage IB",
+  "final_pathologic_stage": "pT1b N0 M0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for intermediate-risk Stage IB, grade 2 endometrioid endometrial carcinoma",
+  "description": "Pathology demonstrates a FIGO grade 2 endometrioid adenocarcinoma of the endometrium measuring 3.4\u00d72.9 cm with focal myometrial invasion (0.7 cm of 2.2 cm) and no cervical, adnexal, nodal, or distant spread (pT1b N0 M0).",
+  "patient_notes": "Your pathology report shows a common type of uterine cancer called endometrioid adenocarcinoma that invaded just under half of the muscle layer of the uterus. The tumor was completely removed with no cancer found in surrounding structures or lymph nodes. Based on national guidelines, the recommended next step is localized internal radiation (vaginal brachytherapy) to lower the chance of the cancer coming back. This treatment is focused and minimizes exposure to other tissues.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.95,
+    "assessment": "Extraction is accurate, complete, and aligned with the pathology report and NCCN guidance."
+  }
+}

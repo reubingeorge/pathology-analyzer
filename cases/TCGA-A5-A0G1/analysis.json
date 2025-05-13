@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "IA (invasion <50% of myometrium, cervix negative, no extrauterine spread)",
+  "Final Pathologic Stage": "pT1a N0 M0",
+  "Recommended Treatment": "Adjuvant systemic therapy with carboplatin plus paclitaxel (6 cycles) with vaginal brachytherapy per NCCN guidelines for stage IA uterine serous carcinoma",
+  "Description": "High-grade endometrial adenocarcinoma with serous features forming a polypoid tumor with focal superficial myometrial invasion (<25%), no cervical or nodal involvement, and negative peritoneal and omental biopsies.",
+  "Patient Notes": "Your pathology shows a high-grade cancer of the lining of the uterus (serous type) that was removed with surgery and has only minimal invasion into the muscle layer. No cancer was found in your lymph nodes or other tissues. To reduce the risk of recurrence, additional treatment typically includes a combination of chemotherapy and localized radiation (vaginal brachytherapy). This approach targets any microscopic disease and is supported by expert guidelines.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extracted data accurately and comprehensively reflects the pathology report. Minor additional detail (e.g., LVSI status and HER2 testing recommendation) could enhance completeness but does not detract from the correctness of the fields provided."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma; Uterine serous carcinoma",
+  "FIGO_stage": "IA",
+  "pathologic_stage": "pT1a pN0 MX",
+  "recommended_treatment": "Adjuvant carboplatin + paclitaxel chemotherapy combined with vaginal brachytherapy, with consideration of pelvic external beam radiation therapy per NCCN guidelines for Stage IA high-risk (grade 3 endometrioid and serous) endometrial carcinoma.",
+  "description": "Surgical pathology reveals a 2.5 cm mixed high-grade endometrial carcinoma (70% FIGO grade 3 endometrioid and 30% serous) with superficial (<50%) myometrial invasion, negative cervical/adnexal involvement, clear margins, and no lymph node metastasis (pT1a pN0).",
+  "patient_notes": "Your report shows a high-grade uterine cancer confined to the inner half of the uterus, with two cell types (endometrioid and serous). The cancer has not spread to nearby organs or lymph nodes, and the surgery achieved clear margins. To lower the risk of recurrence, the recommended next steps are chemotherapy (carboplatin and paclitaxel) and targeted radiation to the vaginal area, with possible additional pelvic radiation. This treatment plan follows national guidelines for your specific cancer type and stage.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.95,
+    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment recommendation details. Minor optional data (e.g., LVSI status) could be added for completeness."
+  }
+}

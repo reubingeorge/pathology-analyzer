@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "FIGO Stage II (pT2)",
+  "pathologic_stage": "pT2 N0 MX",
+  "recommended_treatment": "Adjuvant pelvic external beam radiation therapy with consideration of vaginal brachytherapy per NCCN guidelines for Stage II endometrioid endometrial carcinoma with deep myometrial invasion and extensive LVSI",
+  "description": "Stage II, FIGO grade 1 endometrioid adenocarcinoma of the lower uterine segment with 100% myometrial invasion, cervical stromal involvement, extensive lymphovascular invasion, negative margins, and no lymph node metastases.",
+  "patient_notes": "Your pathology report shows a low-grade uterine cancer that has spread into the muscle of the uterus and the tissue of the cervix but has not spread to lymph nodes. You\u2019ve already had surgery to remove the uterus and ovaries. Because of the depth of invasion and blood vessel involvement, the recommended next step is targeted radiation therapy to the pelvis, which may include a small internal radiation boost, to help reduce the risk of the cancer returning.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.88,
+    "assessment": "The extraction accurately captures key diagnostic findings, staging, and a guideline-concordant treatment recommendation. Minor additional data points (grade and size) could be structured separately for completeness."
+  }
+}

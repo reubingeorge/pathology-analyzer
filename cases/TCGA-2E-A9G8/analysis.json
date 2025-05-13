@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "FIGO_stage": "IA",
+  "final_pathologic_stage": "pT1a pN0 M0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy; observation alone is also an acceptable option per NCCN guidelines for Stage IA, grade 3 endometrioid carcinoma.",
+  "description": "The pathology report demonstrates a 5.2 cm FIGO grade 3 endometrioid adenocarcinoma confined to the endometrium with <50% myometrial invasion, no LVSI, negative margins, and 0/28 lymph nodes involved, corresponding to pT1a pN0.",
+  "patient_notes": "Your surgery removed the uterus, cervix, tubes, and ovaries and confirmed a high-grade endometrial cancer that was limited to the inner layer of the uterus. No cancer was found in the lymph nodes or other tissues. Based on NCCN guidelines, a targeted form of radiation inside the vagina is recommended to reduce the risk of recurrence, though careful observation alone may also be an option. We will support you through treatment and follow-up to ensure the best outcome.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction is largely accurate and consistent with the report and NCCN guidelines. Minor wording adjustments are needed in the descriptive summary and inclusion of nuclear grade and exact tumor location would enhance completeness."
+  }
+}

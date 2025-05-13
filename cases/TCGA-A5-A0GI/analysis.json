@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "FIGO_stage": "Stage IA (Grade II)",
+  "pathologic_stage": "pT1a, pN0, pM0",
+  "recommended_treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, Grade 1\u20132 endometrioid carcinoma; vaginal brachytherapy may be considered (category 2A).",
+  "description": "Pathology demonstrates a grade II endometrioid adenocarcinoma confined to the uterine corpus with superficial (<20%) myometrial invasion, negative lymph nodes (0/7), and no extrauterine spread.",
+  "patient_notes": "The report shows a low-risk uterine cancer that was removed completely during surgery. The cancer was shallowly invasive and did not spread to your lymph nodes or other organs. Based on current guidelines, no further treatment is needed beyond regular check-ups. We will monitor you closely with follow-up visits to ensure everything remains clear.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.88,
+    "assessment": "The extraction accurately captured the key staging, pathology, and treatment recommendations. Minor detail omissions (e.g., squamous changes, LVSI status, explicit histologic grade) should be added for completeness."
+  }
+}

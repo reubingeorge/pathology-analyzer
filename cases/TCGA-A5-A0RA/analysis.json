@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "FIGO Stage IC (>50% myometrial invasion)",
+  "Final Pathologic Stage": "pT1c pN0 (no nodal metastasis)",
+  "Recommended Treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for stage I endometrial adenocarcinoma (grade 2, >50% myometrial invasion).",
+  "Description": "Surgical pathology reveals a grade 2 endometrioid adenocarcinoma of the uterus with deep (75\u201380%) myometrial invasion and no lymph node metastases, staged as pT1c pN0 (FIGO IC).",
+  "Patient Notes": "Your pathology report shows endometrial cancer that was confined to the uterus and has not spread to lymph nodes. The tumor was grade 2 and invaded more than half of the uterine muscle wall. You have had a hysterectomy with removal of both ovaries and tubes. Based on current NCCN guidelines, we recommend adjuvant vaginal brachytherapy to reduce the risk of local recurrence.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment recommendation fields. For completeness, lymphovascular invasion status could be added, but no critical errors were identified."
+  }
+}

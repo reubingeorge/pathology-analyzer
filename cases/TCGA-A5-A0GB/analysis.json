@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Undifferentiated/dedifferentiated carcinoma",
+  "figo_stage": "IIB",
+  "final_pathologic_stage": "pT2b N0 M0",
+  "recommended_treatment": "Adjuvant systemic chemotherapy (carboplatin + paclitaxel) with pelvic external beam radiation therapy and vaginal brachytherapy per NCCN ENDO-13 guidelines for undifferentiated endometrial carcinoma Stage II.",
+  "description": "Pathology reveals a mixed endometrioid and undifferentiated endometrial carcinoma measuring 14.0 \u00d7 7.7 cm with >50% myometrial invasion, cervical stromal involvement, lymphovascular invasion, and negative lymph nodes, consistent with pT2b N0 M0 (FIGO IIB).",
+  "patient_notes": "Your report shows a high-grade cancer of the uterus that extended into the cervix but did not spread to lymph nodes. You have had surgery to remove the uterus, fallopian tubes, and ovaries. Based on expert guidelines, we recommend follow-up treatment with chemotherapy plus radiation to reduce the chance of recurrence. We will also perform imaging and blood tests to monitor your progress.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.87,
+    "assessment": "Extraction is largely accurate and complete, with the single notable correction being inclusion of the endometrioid component in the cancer subtype."
+  }
+}

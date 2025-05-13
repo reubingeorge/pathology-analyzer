@@ -1,0 +1,19 @@
+{
+  "Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "Not specified",
+  "Final Pathologic Stage": "pT3a Nx",
+  "Recommended Treatment": [
+    "Adjuvant systemic chemotherapy with carboplatin and paclitaxel",
+    "Consider addition of trastuzumab if HER2-positive",
+    "Consider external beam radiation therapy with or without vaginal brachytherapy",
+    "Enrollment in clinical trials"
+  ],
+  "Description": "Pathology demonstrates a high-grade uterine serous adenocarcinoma (FIGO grade III) with >50% myometrial invasion and spread to the adnexa and peritoneum, corresponding to AJCC pathologic stage pT3a Nx.",
+  "Patient Notes": "This report shows an aggressive form of uterine cancer called uterine serous carcinoma that has involved the muscle of the uterus and spread to nearby tissues. You have already undergone surgery to remove the uterus and ovaries. The next step recommended by guidelines is chemotherapy with carboplatin and paclitaxel, and we may test for HER2 to see if a targeted drug can be added. Radiation therapy to the pelvis or vaginal area may also be offered to help reduce the chance of recurrence.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction accurately captures the key organ, subtype, AJCC pathologic stage, summary description, and NCCN-based treatment recommendations. FIGO staging was not explicitly provided in the report, and the extractor reasonably left it as 'Not specified.'"
+  }
+}

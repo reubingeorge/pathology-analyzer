@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "Stage IA, Grade 1 of 3",
+  "Final Pathologic Stage": "AJCC pT1b pNx",
+  "Recommended Treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, Grade 1 endometrioid carcinoma",
+  "Description": "Surgical pathology shows a FIGO grade 1 endometrioid adenocarcinoma of the endometrium with superficial myometrial invasion of less than one-third, no lymphovascular invasion, and negative lymph nodes (AJCC pT1b pNx).",
+  "Patient Notes": "Your report indicates a low-grade endometrial cancer confined to the inner muscle layer of the uterus that was completely removed by surgery. No cancer was found in your lymph nodes. Because this is a low-risk tumor, no further treatment is recommended right now, and we will follow you with regular check-ups.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extracted data accurately reflect the key diagnostic, staging, and management details from the report. A few additional details (tumor dimensions, nodal counts, LVSI status) could enhance completeness but do not affect the core extraction."
+  }
+}

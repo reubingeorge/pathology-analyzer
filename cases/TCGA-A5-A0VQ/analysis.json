@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "Stage IA",
+  "final_pathologic_stage": "pT1a pN0 (0/25) pM0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA Grade 3 endometrioid endometrial carcinoma with LVSI; pelvic EBRT is an alternative option. Routine chemotherapy is not indicated.",
+  "description": "Pathology shows a 4 cm FIGO grade 3 endometrioid adenocarcinoma of the endometrium with 36% myometrial invasion, lymphovascular space involvement, endocervical mucosal involvement, and negative lymph nodes.",
+  "patient_notes": "Your report shows a high-grade endometrial cancer confined to your uterus with minimal spread into the uterine muscle and no lymph node involvement. To lower the risk of the cancer returning in the vaginal area, we recommend targeted radiation inside the vagina (vaginal brachytherapy). This treatment is focused and generally well tolerated. We will discuss the details and schedule next steps soon.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "Extraction is accurate and complete. All key clinical, staging, and treatment recommendation details align with the source report and NCCN guidelines."
+  }
+}

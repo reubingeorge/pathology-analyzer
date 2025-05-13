@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "FIGO Stage IA",
+  "final_pathologic_stage": "pT1a pN0 M0",
+  "recommended_treatment": "Adjuvant vaginal cuff brachytherapy; consider adjuvant chemotherapy (carboplatin/paclitaxel) given high-grade (grade 3) endometrioid histology",
+  "description": "Surgical pathology demonstrated a grade 2/3 endometrioid adenocarcinoma of the uterus invading 40% of the myometrial thickness (Stage IA) with clear cervical and parametrial margins, no lymph-vascular space invasion, and negative pelvic and para-aortic lymph nodes (pT1a pN0 M0).",
+  "patient_notes": "Your surgery removed the uterus, tubes, and ovaries, and the report shows a type of uterine cancer that invaded less than half the muscle wall and did not spread to lymph nodes (Stage IA). Because the tumor is higher grade, we recommend an internal radiation treatment (vaginal brachytherapy) to the vaginal cuff and may add chemotherapy (carboplatin and paclitaxel) to lower the risk of recurrence. This treatment plan targets any remaining cells while aiming to minimize side effects.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction accurately captures the organ, histology, staging, and recommended adjuvant therapy consistent with the pathology report and NCCN guidelines. The summary and patient\u2010facing notes are clear and appropriate."
+  }
+}

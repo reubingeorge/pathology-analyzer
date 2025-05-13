@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IA (FIGO Grade 2)",
+  "Final Pathologic Stage": "pT1a pN0 M0",
+  "Recommended Treatment": "Per NCCN guidelines for Stage IA, grade 2 endometrioid endometrial carcinoma with focal LVSI: observation alone or vaginal brachytherapy (category 2A).",
+  "Description": "The hysterectomy specimen shows a FIGO grade 2 endometrioid adenocarcinoma of the endometrium with focal clear\u2010cell features invading less than half the myometrium (5 mm/15 mm), no cervical involvement, and no lymph node or extrauterine spread (0/18 nodes, negative omentum and appendix).",
+  "Patient Notes": "You had an early-stage endometrial cancer confined to the inner muscle of the uterus without lymph node spread. The cancer was removed by surgery (total hysterectomy with removal of tubes and ovaries). Because the tumor was low-to-intermediate grade and there was only minimal blood vessel involvement, no additional treatment may be needed, or you may be offered a low-dose targeted radiation inside the vagina (vaginal brachytherapy) to reduce the small risk of recurrence. We will discuss these options and follow-up plans to keep you safe and supported.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "High-quality extraction with correct organ, stage, pathologic staging, treatment recommendation, and patient-centered summary. Only minor subtype detail and nuclear grade were not fully captured."
+  }
+}

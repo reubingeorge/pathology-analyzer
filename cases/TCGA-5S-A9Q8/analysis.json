@@ -1,0 +1,55 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "Stage IIIA",
+  "final_pathologic_stage": "pT3a N0 M0",
+  "recommended_treatment": "Adjuvant external beam pelvic radiotherapy plus vaginal brachytherapy combined with systemic chemotherapy (carboplatin and paclitaxel) per NCCN guidelines; if radiation is contraindicated, systemic chemotherapy alone with carboplatin/paclitaxel is an alternative.",
+  "description": "Surgical pathology demonstrates endometrioid adenocarcinoma of the endometrium with 30 mm myometrial invasion (<50%) and right ovarian metastasis; lymph nodes and omentum are negative, with no cervical stromal invasion.",
+  "patient_notes": "Your surgery removed a uterine cancer that had grown into the muscle of the uterus and spread to the right ovary. The good news is that no cancer was found in your lymph nodes or other abdominal tissues. To lower the chance of the cancer returning, we recommend follow-up treatment with pelvic radiation (external beam plus vaginal brachytherapy) together with chemotherapy (carboplatin and paclitaxel), consistent with NCCN guidelines for stage IIIA disease.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "The core staging and treatment fields were correctly extracted. However, the summary and patient-facing notes incorrectly imply cervical stromal involvement that is not supported by the report.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": ""
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "The report does not document cervical stromal invasion; the extracted description incorrectly includes cervical involvement."
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Notes state the cancer grew into the 'neck' (cervix) of the uterus, but the pathology report does not show cervical stromal invasion."
+      }
+    },
+    "incorrect_fields": [
+      "description",
+      "patient_notes"
+    ]
+  }
+}

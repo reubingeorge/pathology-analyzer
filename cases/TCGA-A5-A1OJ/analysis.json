@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "Stage IA (FIGO grade 1)",
+  "Final Pathologic Stage": "pT1a pN0 (AJCC Stage IA)",
+  "Recommended Treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, low-risk endometrioid endometrial carcinoma",
+  "Description": "Surgical pathology of a total hysterectomy revealed a primary low-grade endometrioid adenocarcinoma confined to the endometrium with <10% myometrial invasion, no lymphovascular invasion, and negative lymph nodes (pT1a pN0, Stage IA). The fallopian tubes, cervix, and parametrial tissues are free of tumor.",
+  "Patient Notes": "Your surgery removed a low-grade uterine cancer that was confined to the lining of the uterus without any spread to lymph nodes, which corresponds to an early stage (IA). Because this is a low-risk tumor, no further treatments like chemotherapy or radiation are required at this time. We will monitor you with regular check-ups to ensure your continued health.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "The extraction accurately reflects the key pathologic findings, staging, and guideline-based management. Minor details such as precise grade notation, tumor size, and formal margin statement were not included but do not alter the core accuracy."
+  }
+}

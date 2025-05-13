@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "FIGO Stage IA, Grade 2-3",
+  "Final Pathologic Stage": "pT1a pN0 M0",
+  "Recommended Treatment": "Adjuvant vaginal brachytherapy; consider external beam radiation therapy based on lymphovascular space invasion (per NCCN guidelines).",
+  "Description": "The report describes a 1.6\u00d71.5\u00d71.0 cm endometrioid adenocarcinoma of the uterus, FIGO grade 2\u20133, with 7% superficial myometrial invasion, no cervical or adnexal involvement, and no lymph node metastases, with suspicious lymphovascular invasion.",
+  "Patient Notes": "Your pathology shows an endometrial cancer that was confined to the inner layer of the uterus without spread to lymph nodes. The tumor was removed with hysterectomy and lymph node sampling. Because of certain risk factors like tumor grade and possible lymphovascular invasion, we recommend targeted radiation to the top of the vagina (vaginal brachytherapy), and in some cases additional pelvic radiation, to lower the chance of the cancer coming back.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.85,
+    "assessment": "Extraction is accurate and complete for primary oncology elements, with high fidelity to the report and guideline\u2010based recommendations."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "IIIC2",
+  "Final Pathologic Stage": "pT1a pN2 M0",
+  "Recommended Treatment": "Adjuvant systemic chemotherapy with carboplatin and paclitaxel plus external-beam pelvic radiotherapy and vaginal brachytherapy per NCCN guidelines for stage IIIC endometrioid endometrial carcinoma.",
+  "Description": "High-grade (grade 3) endometrioid endometrial adenocarcinoma with 12 mm (46%) myometrial invasion, extensive lymphovascular invasion, and metastatic involvement of multiple pelvic and para-aortic lymph nodes consistent with FIGO stage IIIC2.",
+  "Patient Notes": "This report shows cancer in the lining of your uterus that has invaded less than half of the muscle layer but has spread to nearby lymph nodes. To lower the risk of the disease returning, the recommended treatment is a combination of chemotherapy and targeted radiation to the pelvis and vaginal area. A separate benign appendix finding was also noted. Your care team will explain each step of this treatment plan and support you through the process.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "Extraction is accurate and complete for the primary endometrial carcinoma data; minor ancillary findings (appendix neoplasm, leiomyomas) and node counts could be added for completeness."
+  }
+}

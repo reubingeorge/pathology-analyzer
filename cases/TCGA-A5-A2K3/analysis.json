@@ -1,0 +1,54 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "High-grade endometrial adenocarcinoma favoring serous subtype",
+  "figo_stage": "FIGO IA",
+  "final_pathologic_stage": "pT1a N0 Mx",
+  "recommended_treatment": "Adjuvant chemotherapy with carboplatin and paclitaxel for six cycles plus vaginal brachytherapy per NCCN guidelines for stage I uterine serous carcinoma.",
+  "description": "High-grade endometrial adenocarcinoma favoring serous subtype was found confined to the endometrium with no myometrial invasion (pT1a), extensive lymphovascular space invasion, and negative lymph nodes (N0), resulting in FIGO stage IA (pT1a N0 Mx). Surgical margins and parametria are free of tumor.",
+  "patient_notes": "This report shows a high-grade form of uterine cancer limited to the lining of the uterus with no spread to lymph nodes. All surgical margins are clear and no cancer was found in the removed lymph nodes. To reduce the risk of the cancer coming back, NCCN guidelines recommend chemotherapy with carboplatin and paclitaxel along with targeted radiation treatment inside the vagina. Your care team will discuss how to schedule these treatments and manage any side effects.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.88,
+    "assessment": "Most fields were accurately captured. The only discrepancy is the overly definitive subtype; the report favors a serous component but stops short of diagnosing pure serous carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": false,
+        "confidence": 0.6,
+        "issues": "The report describes a high-grade endometrial adenocarcinoma with serous features favored, but does not definitively classify it as \u2018uterine serous carcinoma.\u2019"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "cancer_subtype"
+    ]
+  }
+}

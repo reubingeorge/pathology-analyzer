@@ -1,0 +1,54 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Mixed carcinoma: endometrioid adenocarcinoma (FIGO grade 2) and uterine serous carcinoma (FIGO grade 3)",
+  "FIGO Stage": "IA",
+  "Final Pathologic Stage": "pT1a pNx M0 (FIGO IA)",
+  "Recommended Treatment": "Adjuvant chemotherapy with carboplatin and paclitaxel plus vaginal brachytherapy per NCCN guidelines for Stage IA uterine serous carcinoma; consider clinical trial enrollment.",
+  "Description": "Surgical pathology reveals a mixed endometrial carcinoma comprising 90% FIGO grade 2 endometrioid adenocarcinoma and <10% FIGO grade 3 serous carcinoma, with <50% myometrial invasion, no lymphovascular invasion, and negative lymph nodes, consistent with FIGO Stage IA.",
+  "Patient Notes": "The pathology shows a tumor in the uterine lining that has been completely removed and did not spread beyond the inner muscle wall or to lymph nodes. It contains two types of cells, most of which are moderate-grade endometrioid cells and a small portion of high-grade serous cells. To reduce the chance of the cancer returning, the recommended treatment is chemotherapy with carboplatin and paclitaxel plus targeted internal radiation. You may also consider joining a clinical trial to access new therapies.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.8,
+    "assessment": "The extraction is largely accurate and complete in capturing histologic subtype, grade, stage, and treatment recommendations. The only substantive error is the TNM nodal designation, which should reflect pN0 rather than pNx given negative lymph node sampling.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.75,
+        "issues": "Extracted as pT1a pNx M0, but lymph nodes were sampled and found negative; should be pN0."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "pathologic_stage"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrial carcinoma with mixed endometrioid and clear cell features",
+  "FIGO_stage": "FIGO Stage IA",
+  "final_pathologic_stage": "pT1a N0 M0",
+  "recommended_treatment": "Adjuvant carboplatin\u2010paclitaxel chemotherapy with consideration of vaginal brachytherapy per NCCN guidelines for clear cell/high\u2010risk histology stage IA endometrial carcinoma.",
+  "description": "Total hysterectomy showed a well-to-moderately differentiated endometrial carcinoma with mixed endometrioid and clear cell features confined to the superficial myometrium (FIGO IA); lymph nodes and omentum were negative (pT1aN0M0).",
+  "patient_notes": "The pathology report shows that the cancer was limited to the inner lining and only superficially into the muscle of the uterus, and no cancer was found in any lymph nodes. Because the tumor has a high\u2010risk clear cell component, we recommend a course of chemotherapy with carboplatin and paclitaxel. You may also be offered a targeted form of vaginal radiation to lower the chance of the cancer coming back. These steps follow the NCCN guidelines for your specific stage and tumor type.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "The extraction is strong and most fields are accurate, but the cancer subtype was incompletely captured. Refining the subtype to include both endometrioid and clear cell components will bring the data into full alignment with the pathology report.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": "While \u2018Uterine cancer\u2019 is broadly correct, the primary site is the endometrium\u2014ideally 'endometrial carcinoma' would be more precise."
+      },
+      "cancer_subtype": {
+        "correct": false,
+        "confidence": 0.95,
+        "issues": "The report describes a mixed endometrioid and clear cell carcinoma. Extracted subtype 'Endometrioid adenocarcinoma' omits the clear cell component."
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "Stage IA is consistent with superficial (<50%) myometrial invasion."
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "pT1a N0 M0 accurately reflects tumor confined to inner half of myometrium with no nodal or distant metastases."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "Recommendation of carboplatin\u2013paclitaxel plus consideration of vaginal brachytherapy aligns with NCCN guidance for stage IA high-risk histology (clear cell) endometrial carcinoma."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "Accurately summarizes grade, mixed histology, depth of invasion, and nodal/omentual status."
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.85,
+        "issues": "Clear and compassionate, though could note the mixed histology explicitly."
+      }
+    },
+    "incorrect_fields": [
+      "cancer_subtype"
+    ]
+  }
+}

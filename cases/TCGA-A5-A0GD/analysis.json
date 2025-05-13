@@ -1,0 +1,57 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "Stage IA",
+  "Final Pathologic Stage": "pT1b, pN0, pM0",
+  "Recommended Treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA, grade 3 endometrioid carcinoma; pelvic external-beam radiation may be considered if additional risk factors are identified.",
+  "Description": "A total abdominal hysterectomy and bilateral salpingo-oophorectomy specimen revealed an endometrioid endometrial adenocarcinoma, FIGO grade II/III, with very superficial myometrial invasion (<20%) and no lymph node or distant metastases (pT1b, pN0, pM0).",
+  "Patient Notes": "Your surgery removed an early-stage endometrial cancer confined to the inner lining of the uterus with very minimal invasion into the muscle layer and no lymph node involvement. The tumor was a common type of endometrial cancer called endometrioid adenocarcinoma and was graded as moderately to poorly differentiated. Because of the higher grade features, we recommend a localized vaginal brachytherapy treatment to lower the risk of recurrence in the vaginal cuff. No evidence of spread beyond the uterus means this is an early stage and the outlook is very favorable.",
+  "verification": {
+    "passed": false,
+    "confidence": 0.85,
+    "assessment": "The extraction captures the primary diagnosis and invasion depth correctly, but the pathologic T stage is mis\u2013recorded and the adjuvant treatment recommendation does not align precisely with NCCN guidance for a grade II, stage IA tumor. Corrections to staging and treatment rationale are needed.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "Organ type \u2018Uterine cancer\u2019 correctly reflects primary site (endometrium)."
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "\u2018Endometrioid adenocarcinoma\u2019 matches report (\u2018endometrial adenocarcinoma, endometrioid type\u2019)."
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": "FIGO IA is correctly inferred from <20% myometrial invasion, although not explicitly stated in the report."
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Report text says pT1b but invasion <20% should be staged pT1a; extracted pT1b conflicts with both FIGO IA and the depth of invasion."
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.7,
+        "issues": "Per NCCN, stage IA, grade 2 (moderately differentiated) often may be observed or receive VBT in select cases; the extraction assumes grade 3 and recommends VBT by default."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Accurately summarizes surgery and invasion but perpetuates the pT1b designation; should read pT1a."
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Clear and compassionate, but repeats the staging error and oversimplifies the grade as \u2018moderately to poorly differentiated\u2019 without clarifying architectural vs nuclear grade."
+      }
+    },
+    "incorrect_fields": [
+      "pathologic_stage",
+      "recommended_treatment",
+      "description",
+      "patient_notes"
+    ]
+  }
+}

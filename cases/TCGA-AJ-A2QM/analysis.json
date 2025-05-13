@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "Stage II",
+  "final_pathologic_stage": "pT2 N0 M0 (FIGO II)",
+  "recommended_treatment": "Adjuvant platinum-based chemotherapy (carboplatin plus paclitaxel) combined with vaginal brachytherapy with or without pelvic external beam radiation therapy, per NCCN guidelines for Stage II uterine serous carcinoma.",
+  "description": "Surgical pathology reveals a high-grade papillary serous carcinoma of the endometrium measuring 3.2\u00d72.7 cm with less than half myometrial invasion and focal endocervical involvement; all sampled lymph nodes are negative (pT2 N0 M0, FIGO II).",
+  "patient_notes": "The pathology report shows a high-grade type of uterine cancer that was confined to the inner muscle layer and had a small focus in the cervix. No cancer was found in the removed lymph nodes. Based on your stage, we recommend chemotherapy combined with targeted radiation to reduce the risk of recurrence. This combined approach is the standard first-line treatment after your surgery according to current guidelines.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extracted data accurately reflect the pathology report findings and align with NCCN guideline recommendations for Stage II uterine serous carcinoma."
+  }
+}

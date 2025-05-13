@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Endometrioid adenocarcinoma",
+  "FIGO Stage": "Stage IA",
+  "Final Pathologic Stage": "pT1a Nx M0, Grade 2",
+  "Recommended Treatment": "Primary surgery (total hysterectomy with bilateral salpingo-oophorectomy) completed; for FIGO IA, grade 2, no LVSI and no nodal involvement, NCCN recommends observation or vaginal brachytherapy as adjuvant options.",
+  "Description": "This report documents a FIGO grade 2 endometrioid adenocarcinoma of the uterus with minimal (<10%) myometrial invasion, no lymphovascular invasion, no nodal or ovarian metastasis, and uncertain focal involvement of the fallopian tube. The tumor is confined to the uterus, consistent with Stage IA disease.",
+  "Patient Notes": "Your pathology shows a low-stage uterine cancer that is confined to the lining and has not spread to lymph nodes or other organs. Because it is a low-risk, early-stage tumor, no further treatment beyond what you\u2019ve already had may be needed, although a small internal radiation treatment (vaginal brachytherapy) is an option to reduce recurrence risk. We will discuss the best follow-up plan, which may simply be regular check-ups or include a brief radiation procedure.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.8,
+    "assessment": "The extractor accurately captured the key diagnostic and staging elements and proposed treatment consistent with NCCN guidance. A few granular pathological details (exact mm invasion depth, lymph node sampling status, and tubal involvement uncertainty) were not pulled but do not materially change the core conclusions."
+  }
+}

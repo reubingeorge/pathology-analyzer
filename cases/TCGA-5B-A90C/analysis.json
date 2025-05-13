@@ -1,0 +1,14 @@
+{
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "FIGO_stage": "IA",
+  "final_pathologic_stage": "pT1a N0 M0",
+  "recommended_treatment": "Per NCCN guidelines for Stage IA, grade 2, endometrioid endometrial cancer without LVSI: observation (surveillance) or vaginal brachytherapy.",
+  "description": "Hysterectomy with bilateral salpingo-oophorectomy revealed a FIGO grade 2 endometrioid adenocarcinoma limited to the endometrium with <50% myometrial invasion, no lymphovascular invasion, and negative pelvic and para-aortic lymph nodes (pT1a N0).",
+  "patient_notes": "Your surgery removed a low-grade cancer confined to the lining of the uterus and showed no spread to lymph nodes or other tissues. This is an early stage (Stage IA) cancer with a very good prognosis. Based on guidelines, you may only need careful follow-up or a small targeted radiation treatment to the vaginal cuff. We will discuss these options and support you through monitoring and any additional care as needed.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "The extraction accurately captures the key oncologic details, staging, and guideline-based recommendation. All fields align with the report and NCCN guidance."
+  }
+}

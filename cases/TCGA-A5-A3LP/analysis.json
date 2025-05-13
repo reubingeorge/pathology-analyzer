@@ -1,0 +1,14 @@
+{
+  "Cancer Organ Type": "Uterine cancer",
+  "Cancer Subtype": "Uterine serous carcinoma",
+  "FIGO Stage": "IIIC1",
+  "Final Pathologic Stage": "pT1b pN1 M0",
+  "Recommended Treatment": "Adjuvant carboplatin-paclitaxel chemotherapy combined with consideration of pelvic external beam radiation and vaginal brachytherapy per NCCN guidelines for stage IIIC uterine serous carcinoma.",
+  "Description": "The hysterectomy specimen revealed a high-grade serous adenocarcinoma invading more than 50% of the myometrium with lymphovascular invasion and metastasis to a pelvic lymph node (pT1b pN1). No tumor was found in ovaries, tubes, or other biopsies.",
+  "Patient Notes": "You have a type of uterine cancer called serous carcinoma that had spread into the muscle layer of your uterus and to one pelvic lymph node. The cancer was treated surgically with removal of your uterus, tubes, and ovaries. Next steps usually involve chemotherapy with two drugs, carboplatin and paclitaxel, and often radiation therapy to reduce the chance of recurrence. Your care team will discuss these treatments and any additional testing you may need.",
+  "verification": {
+    "passed": true,
+    "confidence": 0.9,
+    "assessment": "Extraction is accurate and complete for the specified fields, with appropriate staging and treatment recommendations. Supplemental molecular and grading details could enhance completeness."
+  }
+}
