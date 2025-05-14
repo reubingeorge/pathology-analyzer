@@ -1,55 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
-  "cancer_subtype": "Uterine adenosquamous carcinoma (endometrioid type with malignant squamous differentiation)",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
   "figo_stage": "IA",
-  "final_pathologic_stage": "pT1a pN0",
-  "recommended_treatment": "Adjuvant vaginal brachytherapy with consideration of pelvic EBRT and systemic chemotherapy per NCCN guidelines for high-grade endometrial carcinoma with LVSI.",
-  "description": "The specimen reveals a primary uterine adenosquamous carcinoma (endometrioid type with malignant squamous changes), FIGO grade III, measuring 6.5 cm with <50% myometrial invasion and lymphovascular invasion; all sampled lymph nodes are negative, consistent with FIGO stage IA (pT1a pN0).",
-  "patient_notes": "Your report shows a uterine cancer that was removed by surgery and was confined to the inner half of the uterus with no spread to lymph nodes. Because some cancer cells were seen in small blood vessels, we recommend targeted radiation inside the vagina (brachytherapy) and possibly additional pelvic radiation to lower the risk of recurrence.",
+  "pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy",
+  "description": "High-grade endometrioid adenocarcinoma (FIGO grade III) confined to the uterus with less than 50% myometrial invasion, lymphovascular invasion present, and no lymph node metastases, corresponding to FIGO stage IA (pT1a pN0).",
+  "patient_notes": "Your surgery removed a cancer called endometrioid adenocarcinoma that was confined to the lining of the uterus with no spread to lymph nodes. The tumor was high grade but fully resected with clear margins. We will discuss additional treatments such as radiation therapy to reduce the chance of recurrence.",
   "verification": {
     "passed": false,
     "confidence": 0.85,
-    "assessment": "The extraction captures essential staging and treatment considerations accurately, but misidentifies the histologic subtype and should be refined to reflect the adenosquamous variant and the potential role of chemotherapy in high-risk disease.",
+    "assessment": "All staging fields are accurate; only the treatment recommendation field lacks the NCCN guideline-specified adjuvant therapy for high-intermediate-risk uterine endometrioid adenocarcinoma.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.95,
+        "confidence": 1.0,
         "issues": ""
       },
       "cancer_subtype": {
-        "correct": false,
-        "confidence": 0.95,
-        "issues": "The report describes an adenosquamous carcinoma (endometrioid type with malignant squamous changes), not a pure endometrioid adenocarcinoma."
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "recommended_treatment": {
-        "correct": true,
-        "confidence": 0.8,
-        "issues": "Recommendation of vaginal brachytherapy \u00b1 EBRT is consistent with NCCN for stage IA, grade III with LVSI, but high-risk histology may also prompt consideration of systemic chemotherapy."
-      },
-      "description": {
         "correct": false,
         "confidence": 0.9,
-        "issues": "Subtype is mis-stated; the term 'adenocarcinoma' omits the squamous component. Otherwise size, grade, invasion, LVSI, and nodal status are accurately described."
+        "issues": "Treatment field left as 'Not specified' but NCCN guidelines recommend specific adjuvant therapy for Stage IA Grade III with LVSI."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
       },
       "patient_notes": {
         "correct": true,
-        "confidence": 0.85,
-        "issues": "Clear and compassionate. Does not highlight the adenosquamous variant, which may be relevant for patient understanding."
+        "confidence": 0.95,
+        "issues": ""
       }
     },
     "incorrect_fields": [
-      "cancer_subtype",
-      "description"
-    ]
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:42:54.933347",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Adjuvant vaginal brachytherapy'. Reason: Treatment field left as 'Not specified' but NCCN guidelines recommend specific adjuvant therapy for Stage IA Grade III with LVSI."
+    }
   }
 }

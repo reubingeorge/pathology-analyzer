@@ -1,56 +1,62 @@
 {
   "cancer_organ_type": "Uterine cancer",
-  "cancer_subtype": "Mixed serous and clear cell carcinoma",
-  "figo_stage": "FIGO Stage IIIA (microscopic extension to parametrium)",
-  "final_pathologic_stage": "pT1a pN0 M0",
-  "recommended_treatment": "Following NCCN guidelines for high\u2010risk histology Stage IA endometrial carcinoma: adjuvant platinum\u2010taxane chemotherapy (carboplatin + paclitaxel for 3\u20136 cycles) combined with vaginal brachytherapy (\u00b1 consideration of pelvic external beam radiation).",
-  "description": "High\u2010grade (FIGO grade III), predominantly serous endometrial carcinoma with <50% myometrial invasion, lymphovascular invasion, and a microscopic focus in the left parametrium; all sampled lymph nodes are negative. There is a minor clear cell component and no metastatic involvement of ovaries, tubes, peritoneum, or nodes. ",
-  "patient_notes": "Your pathology report shows a high\u2010grade uterine cancer called serous carcinoma that was mostly confined to the upper layers of the uterine muscle with no cancer found in the lymph nodes. Because this type carries a higher risk of return even at an early stage, the recommended next step is chemotherapy (a combination of two drugs given through an IV) plus a targeted form of internal radiation (vaginal brachytherapy) to help reduce the chance of recurrence. Please discuss scheduling these treatments and any questions with your care team.",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IIIB",
+  "pathologic_stage": "pT3b pN0 pM0",
+  "recommended_treatment": "Adjuvant chemotherapy (carboplatin-paclitaxel) combined with external beam radiation therapy and vaginal brachytherapy",
+  "description": "High-grade uterine serous carcinoma with predominant papillary serous and clear cell components, <50% myometrial invasion, lymphovascular invasion, and microscopic metastasis to the left parametrium; lymph nodes and adnexa are negative.",
+  "patient_notes": "The pathology shows a high-grade uterine cancer that has spread slightly outside the uterus but not to the lymph nodes. Additional treatment is recommended, including chemotherapy and radiation to the pelvic area. The chemotherapy regimen will likely include carboplatin and paclitaxel. Radiation therapy will target the pelvis to lower the chance of recurrence.",
   "verification": {
     "passed": false,
-    "confidence": 0.75,
-    "assessment": "The extraction captures the core findings and treatment rationale well but underestimates stage by omitting parametrial involvement and oversimplifies the histologic subtype. Staging fields should be revised to reflect extra-uterine spread.",
+    "confidence": 0.9,
+    "assessment": "The FIGO stage was incorrectly assigned as IIIA despite parametrial involvement indicating stage IIIB, and the TNM classification should be pT3b rather than pT3a. Treatment should include vaginal brachytherapy in addition to chemotherapy and EBRT for stage IIIB uterine serous carcinoma per NCCN guidelines.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "The primary site is the uterus; classification as uterine cancer is appropriate."
+        "confidence": 0.95,
+        "issues": ""
       },
       "cancer_subtype": {
-        "correct": false,
-        "confidence": 0.8,
-        "issues": "The report describes a predominantly serous carcinoma with a small clear-cell component. The extracted subtype omits the minor clear-cell component."
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
       },
       "figo_stage": {
         "correct": false,
-        "confidence": 0.4,
-        "issues": "The presence of a microscopic focus of metastatic carcinoma in the left parametrium represents extra-uterine spread and upstages beyond IA under FIGO 2009 criteria."
+        "confidence": 0.95,
+        "issues": "Parametrial involvement was misassigned as stage IIIA; FIGO IIIA is limited to serosal/adnexal involvement, whereas parametrial involvement is stage IIIB."
       },
       "pathologic_stage": {
         "correct": false,
-        "confidence": 0.4,
-        "issues": "Parametrial involvement should be reflected in the T category (e.g., pT3a), not pT1a."
+        "confidence": 0.95,
+        "issues": "T3a was assigned despite parametrium involvement, which defines T3b in TNM. Nodal and distant metastases are negative."
       },
       "recommended_treatment": {
-        "correct": true,
-        "confidence": 0.8,
-        "issues": "For high-risk histology confined to early uterine stages, platinum-taxane chemotherapy plus vaginal brachytherapy is consistent with NCCN guidance. If re-staged to IIIA, pelvic EBRT may also be indicated."
+        "correct": false,
+        "confidence": 0.85,
+        "issues": "Omitted vaginal brachytherapy, which is recommended along with EBRT and chemotherapy for stage IIIB high-grade serous carcinoma per NCCN."
       },
       "description": {
         "correct": true,
         "confidence": 0.9,
-        "issues": "Accurately summarizes grade, myometrial invasion, lymphovascular invasion, parametrial focus, nodal negativity, and minor clear-cell component. It omits some ancillary findings (e.g., intraepithelial carcinoma in polyps, adenomyosis involvement), but these are not critical to core staging summary."
+        "issues": ""
       },
       "patient_notes": {
         "correct": true,
         "confidence": 0.9,
-        "issues": "Clear, compassionate, and aligned with the extracted summary and treatment plan."
+        "issues": ""
       }
     },
     "incorrect_fields": [
-      "cancer_subtype",
       "figo_stage",
-      "pathologic_stage"
-    ]
+      "pathologic_stage",
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:40:39.208766",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IIIA' to 'IIIB'. Reason: Parametrial involvement was misassigned as stage IIIA; FIGO IIIA is limited to serosal/adnexal involvement, whereas parametrial involvement is stage IIIB.",
+      "pathologic_stage": "Changed from 'pT3a pN0 pM0' to 'pT3b pN0 pM0'. Reason: T3a was assigned despite parametrium involvement, which defines T3b in TNM. Nodal and distant metastases are negative.",
+      "recommended_treatment": "Changed from 'Adjuvant chemotherapy (carboplatin-paclitaxel) and external beam radiation therapy' to 'Adjuvant chemotherapy (carboplatin-paclitaxel) combined with external beam radiation therapy and vaginal brachytherapy'. Reason: Omitted vaginal brachytherapy, which is recommended along with EBRT and chemotherapy for stage IIIB high-grade serous carcinoma per NCCN."
+    }
   }
 }

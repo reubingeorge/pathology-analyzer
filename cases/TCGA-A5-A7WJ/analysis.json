@@ -1,14 +1,58 @@
 {
-  "cancer_organ_type": "Uterine cancer",
+  "cancer_organ_type": "Uterus",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "Stage IA (FIGO)",
-  "final_pathologic_stage": "pT1a pN0 M0",
-  "recommended_treatment": "Total hysterectomy with bilateral salpingo-oophorectomy already performed; no additional adjuvant therapy is required for Stage IA, grade 2 endometrioid carcinoma without substantial LVSI; consider vaginal brachytherapy or observation per NCCN guidelines.",
-  "description": "This surgical pathology report describes a 5.7 cm endometrioid endometrial adenocarcinoma, FIGO grade 2, with invasion of less than half the myometrium (0.2 cm of 1.7 cm), negative cervical and adnexal involvement, and no lymph node metastases (pT1a pN0). The specimen margins are uninvolved and lymphovascular invasion is indeterminate.",
-  "patient_notes": "Your pathology report shows an early-stage endometrial cancer (stage IA) that was completely removed by surgery, and no cancer was found in the lymph nodes. Based on current NCCN guidelines, no further treatment is generally needed, though a low-dose vaginal radiation may be offered to reduce the risk of local recurrence. We will continue to follow you with regular visits and imaging to ensure your continued health and address any concerns.",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a, pN0, pM0",
+  "recommended_treatment": "Observation or vaginal brachytherapy",
+  "description": "Pathology reveals a grade 2 endometrioid adenocarcinoma of the uterus, 5.7 cm in size, with less than half myometrial invasion. Lymph nodes are negative, consistent with pT1a pN0 disease.",
+  "patient_notes": "Your diagnosis is a type of uterine cancer that was confined to the inner muscle layer and did not spread to your lymph nodes. The tumor was completely removed with surgery. Current guidelines support close follow-up without additional treatment or, as an option, low-dose radiation to the vaginal area. We will discuss the best follow-up plan for you.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.85,
-    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment\u2010planning elements. Minor assumptions (FIGO staging term and M0) are reasonable but could be noted explicitly."
+    "assessment": "FIGO and pathologic staging are accurately assigned as IA (pT1a, pN0, pM0).",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Organ type should be exactly 'Uterus' as per provided organ types list, not 'Uterine cancer'."
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "cancer_organ_type"
+    ],
+    "timestamp": "2025-05-14T01:45:39.917333",
+    "change_explanations": {
+      "cancer_organ_type": "Changed from 'Uterine cancer' to 'Uterus'. Reason: Organ type should be exactly 'Uterus' as per provided organ types list, not 'Uterine cancer'."
+    }
   }
 }

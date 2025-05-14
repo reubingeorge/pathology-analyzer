@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "FIGO Stage IA, Grade 1 (nuclear grade 2 with focal grade 3 features)",
-  "Final Pathologic Stage": "pT1a N0 M0",
-  "Recommended Treatment": "Observation (no adjuvant therapy) per NCCN guidelines for stage IA, grade 1 endometrioid carcinoma",
-  "Description": "Surgical pathology reveals a primary endometrioid adenocarcinoma of the uterine corpus, FIGO grade 1, with less than 50% myometrial invasion, no lymphovascular or nodal involvement, consistent with FIGO stage IA.",
-  "Patient Notes": "Your surgery removed a low-grade uterine cancer that was confined to the inner lining and has not spread to lymph nodes or other tissues. No additional treatment like radiation or chemotherapy is typically recommended for this very early-stage, low-risk cancer. We will monitor you closely with regular follow-up exams to ensure there is no recurrence.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Observation (no adjuvant therapy)",
+  "description": "Primary endometrioid adenocarcinoma Grade 1 with less than 50% myometrial invasion, no lymphovascular invasion, and negative lymph nodes consistent with FIGO Stage IA disease.",
+  "patient_notes": "Your report indicates a low-grade uterine cancer confined to the uterus with minimal invasion and no spread to lymph nodes. This early-stage finding often allows for simple follow-up or localized treatment to reduce recurrence risk. Your care team will discuss the best approach for your situation. Most patients with this stage have a very favorable outlook.",
   "verification": {
-    "passed": true,
-    "confidence": 0.95,
-    "assessment": "The extraction accurately captured all critical oncologic parameters (organ, histologic subtype, FIGO and pathologic stage, and guideline-based management). Only ancillary details that are not essential for staging or treatment decision-making were omitted."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "Staging and subtype information are accurate; however, treatment recommendation should reflect NCCN guideline for low-risk Stage IA Grade 1 endometrioid adenocarcinoma, which is observation only.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Recommendation missing; NCCN guidelines for Stage IA grade 1 recommend observation without adjuvant therapy."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:24:52.426103",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Observation (no adjuvant therapy)'. Reason: Recommendation missing; NCCN guidelines for Stage IA grade 1 recommend observation without adjuvant therapy."
+    }
   }
 }

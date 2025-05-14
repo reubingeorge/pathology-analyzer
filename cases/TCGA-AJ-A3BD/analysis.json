@@ -1,54 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Uterine serous carcinoma",
-  "FIGO Stage": "IIIC2",
-  "Final Pathologic Stage": "pT3a N2 M0 (FIGO IIIC2)",
-  "Recommended Treatment": "Total hysterectomy with bilateral salpingo-oophorectomy and staging (including omentectomy and lymphadenectomy) followed by adjuvant carboplatin/paclitaxel chemotherapy, with consideration of external beam radiotherapy and vaginal brachytherapy per NCCN guidelines for stage IIIC2 uterine serous carcinoma.",
-  "Description": "High-grade papillary serous carcinoma of the endometrium (4.5\u2009cm) with full-thickness myometrial invasion, cervical stromal involvement, a small ovarian focus, and nodal metastases (pT3a N2 M0, FIGO IIIC2). Six of 26 pelvic and para-aortic lymph nodes were positive.",
-  "Patient Notes": "This report describes a high-grade cancer of the uterine lining called serous endometrial carcinoma that has spread into the muscle wall of the uterus, the cervix, a tiny area of the ovary, and nearby lymph nodes. The cancer is classified as stage IIIC2, which means it has reached the lymph nodes above the pelvis. Treatment will involve surgery to remove the uterus and ovaries, followed by chemotherapy (a combination of carboplatin and paclitaxel) and possibly targeted radiation to reduce the chance of the cancer returning.",
+  "cancer_organ_type": "Uterus",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IIIC2",
+  "pathologic_stage": "pT3aN2",
+  "recommended_treatment": "Systemic therapy with or without EBRT",
+  "description": "High-grade papillary serous carcinoma of the endometrium with extensive myometrial invasion, cervical stromal involvement, adnexal implants, and pelvic and para-aortic lymph node metastases (pT3aN2, FIGO IIIC2).",
+  "patient_notes": "The report shows a high-grade uterine cancer that has spread beyond the uterus to nearby lymph nodes and ovary. Additional treatment after surgery is recommended, typically chemotherapy with or without radiation therapy. Your care team will discuss the details and next steps to manage this cancer.",
   "verification": {
     "passed": false,
-    "confidence": 0.85,
-    "assessment": "The extracted data are largely accurate and consistent with the report and NCCN guidance, but the nodal positivity count in the description is incorrect and should be revised. Additional molecular and immunohistochemical details would improve completeness.",
+    "confidence": 0.9,
+    "assessment": "Staging, subtype, and treatment recommendations are accurate and consistent with the report; only the primary organ nomenclature did not conform to standard NCCN naming conventions.",
     "field_issues": {
       "cancer_organ_type": {
-        "correct": true,
-        "confidence": 0.9,
-        "issues": "Broadly labeled as \u201cUterine cancer\u201d; more precise term is \u201cEndometrial carcinoma\u201d."
+        "correct": false,
+        "confidence": 0.95,
+        "issues": "Organ type should match the specific primary anatomical organ according to NCCN conventions."
       },
       "cancer_subtype": {
         "correct": true,
-        "confidence": 0.95,
-        "issues": "Accurate as papillary serous carcinoma (uterine serous carcinoma)."
+        "confidence": 0.98,
+        "issues": ""
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.95,
-        "issues": "Correctly captured as IIIC2."
+        "confidence": 0.99,
+        "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "Appropriately recorded as pT3a N2 M0 (FIGO IIIC2)."
+        "confidence": 0.99,
+        "issues": ""
       },
       "recommended_treatment": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "Follows NCCN guidelines for stage IIIC2 serous endometrial carcinoma; could also note recommended HER2 testing."
+        "confidence": 0.95,
+        "issues": ""
       },
       "description": {
-        "correct": false,
-        "confidence": 0.9,
-        "issues": "Misstated the number of positive lymph nodes (extraction says 6 of 26, but report documents 5 positive nodes among 26)."
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
       },
       "patient_notes": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "Clear and compassionate; accurately reflects extent of spread and planned treatment."
+        "confidence": 0.95,
+        "issues": ""
       }
     },
     "incorrect_fields": [
-      "description"
-    ]
+      "cancer_organ_type"
+    ],
+    "timestamp": "2025-05-14T01:50:52.496068",
+    "change_explanations": {
+      "cancer_organ_type": "Changed from 'Uterine cancer' to 'Uterus'. Reason: Organ type should match the specific primary anatomical organ according to NCCN conventions."
+    }
   }
 }

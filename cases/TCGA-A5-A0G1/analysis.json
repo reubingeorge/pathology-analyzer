@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Uterine serous carcinoma",
-  "FIGO Stage": "IA (invasion <50% of myometrium, cervix negative, no extrauterine spread)",
-  "Final Pathologic Stage": "pT1a N0 M0",
-  "Recommended Treatment": "Adjuvant systemic therapy with carboplatin plus paclitaxel (6 cycles) with vaginal brachytherapy per NCCN guidelines for stage IA uterine serous carcinoma",
-  "Description": "High-grade endometrial adenocarcinoma with serous features forming a polypoid tumor with focal superficial myometrial invasion (<25%), no cervical or nodal involvement, and negative peritoneal and omental biopsies.",
-  "Patient Notes": "Your pathology shows a high-grade cancer of the lining of the uterus (serous type) that was removed with surgery and has only minimal invasion into the muscle layer. No cancer was found in your lymph nodes or other tissues. To reduce the risk of recurrence, additional treatment typically includes a combination of chemotherapy and localized radiation (vaginal brachytherapy). This approach targets any microscopic disease and is supported by expert guidelines.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Systemic therapy with or without external beam radiation therapy and/or vaginal brachytherapy",
+  "description": "High-grade serous carcinoma of the endometrium presenting as a polypoid lesion with focal superficial myometrial invasion (<1/4 thickness), negative lymph nodes, and no extrauterine disease.",
+  "patient_notes": "The pathology report shows a high-grade uterine serous carcinoma removed by hysterectomy with focal superficial myometrial invasion and no nodal or distant disease. Based on NCCN guidelines for high-risk histology Stage IA uterine serous carcinoma, adjuvant systemic chemotherapy with or without vaginal brachytherapy is recommended to reduce recurrence risk.",
   "verification": {
-    "passed": true,
-    "confidence": 0.85,
-    "assessment": "The extracted data accurately and comprehensively reflects the pathology report. Minor additional detail (e.g., LVSI status and HER2 testing recommendation) could enhance completeness but does not detract from the correctness of the fields provided."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "Staging (FIGO IA, pT1a pN0 pM0) is accurate based on <1/4 myometrial invasion and negative nodes; only the patient_notes field required correction to align with NCCN recommendations against observation alone for high-grade serous carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.5,
+        "issues": "Observation alone is not recommended for high-grade uterine serous carcinoma even in Stage IA; adjuvant chemotherapy with or without vaginal brachytherapy is standard."
+      }
+    },
+    "incorrect_fields": [
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:16:00.378353",
+    "change_explanations": {
+      "patient_notes": "Changed from 'The pathology report shows a high-grade uterine cancer that was removed by hysterectomy. The cancer was very superficial and had not spread to lymph nodes or other organs. Based on guidelines for this type and stage, additional treatment may include chemotherapy and radiation therapy to reduce the risk of recurrence. Observation alone could also be considered depending on individual factors.' to 'The pathology report shows a high-grade uterine serous carcinoma removed by hysterectomy with focal superficial myometrial invasion and no nodal or distant disease. Based on NCCN guidelines for high-risk histology Stage IA uterine serous carcinoma, adjuvant systemic chemotherapy with or without vaginal brachytherapy is recommended to reduce recurrence risk.'. Reason: Observation alone is not recommended for high-grade uterine serous carcinoma even in Stage IA; adjuvant chemotherapy with or without vaginal brachytherapy is standard."
+    }
   }
 }

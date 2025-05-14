@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "Stage IIB",
-  "final_pathologic_stage": "pT2 N0 M0",
-  "recommended_treatment": "Adjuvant pelvic external beam radiation therapy with vaginal brachytherapy per NCCN guidelines for Stage II endometrioid carcinoma; consider addition of systemic chemotherapy (carboplatin/paclitaxel) in the presence of high-risk features (deep myometrial invasion, LVSI, grade 2).",
-  "description": "Moderately to poorly differentiated endometrioid carcinoma diffusely involves the uterine cavity with near\u2013full-thickness myometrial invasion and cervical stromal involvement, negative margins, and no nodal metastases (pT2 N0).",
-  "patient_notes": "The surgical pathology shows endometrial cancer that grew through most of the uterine wall and into the cervical tissue, but no cancer was found in the lymph nodes. To reduce the risk of recurrence, you will receive radiation to the pelvis along with targeted radiation inside the vagina. Because there are some high-risk features, we may also discuss adding chemotherapy to your treatment plan. We will review what to expect and support you through each step.",
+  "figo_stage": "Stage II",
+  "pathologic_stage": "pT2 N0",
+  "recommended_treatment": "Pelvic external beam radiation therapy with vaginal brachytherapy; consider adjuvant chemotherapy",
+  "description": "Surgical pathology demonstrates endometrioid adenocarcinoma of the endometrium with deep myometrial invasion approaching the serosa and cervical stromal involvement, with no lymph node metastasis (0/12). Margins are uninvolved following hysterectomy with bilateral salpingo-oophorectomy and lymph node dissection.",
+  "patient_notes": "Your reports show that the uterine cancer had grown into the muscle wall and into the cervix but did not spread to any lymph nodes. The hysterectomy and lymph node removal had clear margins and found no remaining cancer in the tissues. We will review these results and discuss whether you need any further treatment such as radiation to lower the risk of the cancer coming back.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.9,
-    "assessment": "The key fields were accurately and consistently extracted with no substantive errors. Additional pathologic details (grade, depth of invasion, LVSI, tumor size) could enhance the completeness but do not affect the core staging and treatment recommendations."
+    "assessment": "Pathologic and FIGO staging (Stage II, pT2N0) are accurate based on deep myometrial invasion, cervical stromal involvement, and negative nodes. Adjuvant therapy recommendations were missing and should follow NCCN guidelines for Stage II high-intermediate risk endometrioid carcinoma with EBRT, vaginal brachytherapy, and consideration of chemotherapy.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "No NCCN-based adjuvant therapy recommendation provided for Stage II high-intermediate risk endometrioid carcinoma."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:49:40.817922",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Pelvic external beam radiation therapy with vaginal brachytherapy; consider adjuvant chemotherapy'. Reason: No NCCN-based adjuvant therapy recommendation provided for Stage II high-intermediate risk endometrioid carcinoma."
+    }
   }
 }

@@ -1,14 +1,53 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "IA (FIGO Grade 2)",
-  "Final Pathologic Stage": "pT1a pN0 M0",
-  "Recommended Treatment": "Per NCCN guidelines for Stage IA, grade 2 endometrioid endometrial carcinoma with focal LVSI: observation alone or vaginal brachytherapy (category 2A).",
-  "Description": "The hysterectomy specimen shows a FIGO grade 2 endometrioid adenocarcinoma of the endometrium with focal clear\u2010cell features invading less than half the myometrium (5 mm/15 mm), no cervical involvement, and no lymph node or extrauterine spread (0/18 nodes, negative omentum and appendix).",
-  "Patient Notes": "You had an early-stage endometrial cancer confined to the inner muscle of the uterus without lymph node spread. The cancer was removed by surgery (total hysterectomy with removal of tubes and ovaries). Because the tumor was low-to-intermediate grade and there was only minimal blood vessel involvement, no additional treatment may be needed, or you may be offered a low-dose targeted radiation inside the vagina (vaginal brachytherapy) to reduce the small risk of recurrence. We will discuss these options and follow-up plans to keep you safe and supported.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy",
+  "description": "Specimen shows FIGO grade 2 endometrioid adenocarcinoma with focal clear cell features invading less than half of the myometrium, with no cervical or nodal involvement and suspicious lymphovascular invasion.",
+  "patient_notes": "This report describes early-stage uterine cancer confined to the uterine lining and muscle wall, with no spread to lymph nodes or other tissues. A small focus of vessel involvement was noted, which increases the risk of recurrence. To reduce this risk, we recommend adjuvant vaginal brachytherapy, a targeted radiation treatment focused on the upper vagina.",
   "verification": {
     "passed": true,
-    "confidence": 0.9,
-    "assessment": "High-quality extraction with correct organ, stage, pathologic staging, treatment recommendation, and patient-centered summary. Only minor subtype detail and nuclear grade were not fully captured."
+    "confidence": 0.93,
+    "assessment": "Staging is correctly identified as FIGO stage IA and pathologic stage pT1a pN0 pM0 based on less than half myometrial invasion and negative lymph nodes.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:22:38.962966"
   }
 }

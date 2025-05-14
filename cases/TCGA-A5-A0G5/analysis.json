@@ -1,14 +1,53 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Mixed high-grade carcinoma (serous, clear cell, and undifferentiated features)",
-  "FIGO Stage": "IB",
-  "Final Pathologic Stage": "pT1b, N0, MX",
-  "Recommended Treatment": "Adjuvant systemic chemotherapy with carboplatin and paclitaxel, with consideration of external beam pelvic radiation therapy and vaginal brachytherapy following total hysterectomy and surgical staging.",
-  "Description": "Surgical pathology of a total abdominal hysterectomy and bilateral salpingo-oophorectomy reveals a primary high-grade uterine carcinoma with serous, clear cell, and undifferentiated/anaplastic features replacing the endometrium and invading over 80% of the myometrium, with lymphovascular invasion but no lymph node metastases. Pathologic staging is pT1b, N0, MX corresponding to FIGO stage IB.",
-  "Patient Notes": "Your surgery removed the uterus, ovaries, and fallopian tubes, and the lab results show a high-grade cancer that grew deep into the uterine muscle but did not spread to the lymph nodes. To reduce the risk of the cancer coming back, we recommend chemotherapy with carboplatin and paclitaxel, and you may also receive targeted radiation treatments to the pelvis and vaginal area. This follow-up treatment helps destroy any remaining cancer cells and improve long-term outcomes. Please discuss the plan and any side effects with your care team.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Undifferentiated / dedifferentiated carcinoma",
+  "figo_stage": "IB",
+  "pathologic_stage": "pT1b N0 MX",
+  "recommended_treatment": "Total hysterectomy with bilateral salpingo-oophorectomy and surgical staging followed by adjuvant carboplatin-paclitaxel chemotherapy and vaginal brachytherapy",
+  "description": "High-grade undifferentiated uterine carcinoma with serous and clear-cell features demonstrating >80% myometrial invasion and lymphovascular space invasion with negative regional lymph nodes.",
+  "patient_notes": "Your pathology report shows a high-grade uterine cancer that has invaded most of the muscle layer but has not spread to your lymph nodes. We recommend removing the uterus and ovaries with surgical staging, followed by chemotherapy and focused radiation to the vaginal area to reduce recurrence risk.",
   "verification": {
     "passed": true,
-    "confidence": 0.95,
-    "assessment": "The extracted data accurately reflects the pathology report and aligns with NCCN guidance for stage IB high-grade uterine carcinoma."
+    "confidence": 0.92,
+    "assessment": "The FIGO and pathologic staging are accurate as assigned based on >80% myometrial invasion, absence of cervical stromal involvement, negative lymph nodes, matching Stage IB and pT1b N0 MX.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:18:21.563228"
   }
 }

@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma (adenosquamous variant)",
-  "FIGO Stage": "IB",
-  "Final Pathologic Stage": "pT1b pN0 pM0",
-  "Recommended Treatment": "Per NCCN guidelines for stage IB, grade 3 endometrioid carcinoma: adjuvant chemotherapy with carboplatin and paclitaxel combined with vaginal brachytherapy, with consideration of pelvic external beam radiation therapy.",
-  "Description": "Surgical pathology reveals a high-grade endometrioid adenocarcinoma of the uterine corpus with malignant squamous differentiation, >50% myometrial invasion, FIGO stage IB (pT1bN0), and no lymph node metastases.",
-  "Patient Notes": "Your report shows a high-grade cancer in the lining of your uterus that invaded more than half of the muscle layer but did not spread to any lymph nodes. The standard recommendation after surgery is a combination of chemotherapy (carboplatin and paclitaxel) and targeted radiation delivered inside the vagina, with possible external radiation. This treatment approach helps reduce the chance of the cancer returning. Your oncology team will explain the plan and support you throughout therapy.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IB",
+  "pathologic_stage": "pT1b pN0",
+  "recommended_treatment": "Total hysterectomy with bilateral salpingo-oophorectomy and lymph node assessment; adjuvant pelvic radiation therapy with vaginal brachytherapy and consideration of systemic chemotherapy",
+  "description": "High-grade endometrioid adenocarcinoma with malignant squamous differentiation measuring 4 cm, invading >50% of the myometrium (pT1b), no cervical or lymph node involvement (pN0), corresponding to FIGO stage IB.",
+  "patient_notes": "The report shows a high-grade cancer in the lining of your uterus that has invaded more than half of the muscle layer but is confined to the uterus and lymph nodes. Your care team will recommend additional therapy based on standardized guidelines to reduce the risk of recurrence.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.9,
-    "assessment": "Extracted information is accurate, complete, and consistent with the source report and relevant NCCN guidelines."
+    "assessment": "The extracted FIGO stage IB and pathologic stage pT1b pN0 are consistent with >50% myometrial invasion and no nodal involvement as reported. Medical inference validation identified issues: The subtype and staging are correctly selected and consistent, but adjuvant treatment recommendations per NCCN for stage IB high-grade endometrioid carcinoma are missing.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:44:22.531138",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Total hysterectomy with bilateral salpingo-oophorectomy and lymph node assessment; adjuvant pelvic radiation therapy with vaginal brachytherapy and consideration of systemic chemotherapy'"
+    }
   }
 }

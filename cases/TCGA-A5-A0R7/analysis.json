@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "FIGO Stage IA",
-  "final_pathologic_stage": "pT1a pN0 M0",
-  "recommended_treatment": "Adjuvant vaginal cuff brachytherapy; consider adjuvant chemotherapy (carboplatin/paclitaxel) given high-grade (grade 3) endometrioid histology",
-  "description": "Surgical pathology demonstrated a grade 2/3 endometrioid adenocarcinoma of the uterus invading 40% of the myometrial thickness (Stage IA) with clear cervical and parametrial margins, no lymph-vascular space invasion, and negative pelvic and para-aortic lymph nodes (pT1a pN0 M0).",
-  "patient_notes": "Your surgery removed the uterus, tubes, and ovaries, and the report shows a type of uterine cancer that invaded less than half the muscle wall and did not spread to lymph nodes (Stage IA). Because the tumor is higher grade, we recommend an internal radiation treatment (vaginal brachytherapy) to the vaginal cuff and may add chemotherapy (carboplatin and paclitaxel) to lower the risk of recurrence. This treatment plan targets any remaining cells while aiming to minimize side effects.",
+  "figo_stage": "Stage IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Vaginal brachytherapy; observation may be considered",
+  "description": "The patient has a grade 2 endometrioid adenocarcinoma of the uterus with 40% myometrial invasion, clear margins, and negative lymph nodes consistent with stage IA disease.",
+  "patient_notes": "Your report shows an early-stage uterine cancer that invaded less than half of the uterine wall. No cancer was found in the lymph nodes or other tissues. To lower the risk of recurrence, you may be offered targeted internal vaginal radiation treatment. This approach aims to treat any residual cells while minimizing side effects.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.9,
-    "assessment": "The extraction accurately captures the organ, histology, staging, and recommended adjuvant therapy consistent with the pathology report and NCCN guidelines. The summary and patient\u2010facing notes are clear and appropriate."
+    "assessment": "Stage IA, grade 2 endometrioid adenocarcinoma with <50% myometrial invasion and negative nodes is low risk; adjuvant vaginal brachytherapy is recommended per NCCN, not systemic therapy or EBRT.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "The recommended treatment is too aggressive for Stage IA, grade 2 endometrioid adenocarcinoma without LVSI; systemic therapy and EBRT are not indicated per NCCN."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:32:00.255579",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Options include systemic therapy with or without external beam radiation therapy and with or without vaginal brachytherapy; or external beam radiation therapy with or without vaginal brachytherapy' to 'Vaginal brachytherapy; observation may be considered'. Reason: The recommended treatment is too aggressive for Stage IA, grade 2 endometrioid adenocarcinoma without LVSI; systemic therapy and EBRT are not indicated per NCCN."
+    }
   }
 }

@@ -1,14 +1,64 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "IA",
-  "Final Pathologic Stage": "pT1b N0 M0",
-  "Recommended Treatment": "Surveillance (no adjuvant therapy) per NCCN guidelines for stage IA, grade 1 endometrioid endometrial carcinoma following TH/BSO",
-  "Description": "Pathology reveals a FIGO grade 1 endometrioid adenocarcinoma of the uterus with superficial myometrial invasion (<50%), negative cervical margins, and no lymph node or adnexal involvement.",
-  "Patient Notes": "Your report shows a low-grade uterine cancer that was confined to the inner lining and only superficially invaded the muscle of your uterus. No cancer was found in the lymph nodes or other reproductive organs. Because it\u2019s a stage IA, grade 1 tumor, you have a very low risk of recurrence, and no additional treatment is needed beyond regular follow-up visits. We will schedule routine check-ups to monitor your health moving forward.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a, pN0",
+  "recommended_treatment": "Observation",
+  "description": "A grade 1 endometrioid adenocarcinoma extensively involves the endometrial mucosa with superficial (<50%) myometrial invasion, negative cervical and parametrial tissues, and no nodal metastases (pT1a, N0).",
+  "patient_notes": "Your pathology shows a low-grade endometrial cancer confined to the uterus with shallow invasion and no spread to lymph nodes. You have already undergone removal of the uterus and ovaries, and no further treatment is likely needed. We will monitor you closely with regular follow-up exams and imaging to ensure there is no recurrence.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.85,
-    "assessment": "The extraction accurately captures the primary diagnosis, staging, and management recommendation. A few ancillary details\u2014tumor size, grade specifics, LVSI quantification\u2014were not extracted but do not affect core decision-making."
+    "assessment": "FIGO and pathologic staging were incorrectly assigned as IB/pT1b but should be IA/pT1a given <50% myometrial invasion; treatment should be observation per NCCN for stage IA, grade 1.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "FIGO stage is stated as IB but myometrial invasion is <50%, consistent with IA."
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Pathologic stage is recorded as pT1b but invasion <50% of myometrium corresponds to pT1a."
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Postoperative observation (no adjuvant therapy) is recommended for stage IA, grade 1, not additional surgery."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Description references pT1b instead of pT1a and IB instead of IA."
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.8,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "pathologic_stage",
+      "recommended_treatment",
+      "description"
+    ],
+    "timestamp": "2025-05-14T01:29:09.502875",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IB' to 'IA'. Reason: FIGO stage is stated as IB but myometrial invasion is <50%, consistent with IA.",
+      "pathologic_stage": "Changed from 'pT1b, pN0' to 'pT1a, pN0'. Reason: Pathologic stage is recorded as pT1b but invasion <50% of myometrium corresponds to pT1a.",
+      "recommended_treatment": "Changed from 'Total hysterectomy with bilateral salpingo-oophorectomy' to 'Observation'. Reason: Postoperative observation (no adjuvant therapy) is recommended for stage IA, grade 1, not additional surgery.",
+      "description": "Changed from 'A grade 1 endometrioid adenocarcinoma extensively involves the endometrial mucosa with superficial (<50%) myometrial invasion, negative cervical and parametrial tissues, and no nodal metastases (pT1b, N0).' to 'A grade 1 endometrioid adenocarcinoma extensively involves the endometrial mucosa with superficial (<50%) myometrial invasion, negative cervical and parametrial tissues, and no nodal metastases (pT1a, N0).'. Reason: Description references pT1b instead of pT1a and IB instead of IA."
+    }
   }
 }

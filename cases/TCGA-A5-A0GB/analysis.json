@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
-  "cancer_subtype": "Undifferentiated/dedifferentiated carcinoma",
+  "cancer_subtype": "Undifferentiated / dedifferentiated carcinoma",
   "figo_stage": "IIB",
-  "final_pathologic_stage": "pT2b N0 M0",
-  "recommended_treatment": "Adjuvant systemic chemotherapy (carboplatin + paclitaxel) with pelvic external beam radiation therapy and vaginal brachytherapy per NCCN ENDO-13 guidelines for undifferentiated endometrial carcinoma Stage II.",
-  "description": "Pathology reveals a mixed endometrioid and undifferentiated endometrial carcinoma measuring 14.0 \u00d7 7.7 cm with >50% myometrial invasion, cervical stromal involvement, lymphovascular invasion, and negative lymph nodes, consistent with pT2b N0 M0 (FIGO IIB).",
-  "patient_notes": "Your report shows a high-grade cancer of the uterus that extended into the cervix but did not spread to lymph nodes. You have had surgery to remove the uterus, fallopian tubes, and ovaries. Based on expert guidelines, we recommend follow-up treatment with chemotherapy plus radiation to reduce the chance of recurrence. We will also perform imaging and blood tests to monitor your progress.",
+  "pathologic_stage": "pT2b N0",
+  "recommended_treatment": "Systemic therapy + EBRT + vaginal brachytherapy",
+  "description": "Surgical pathology reveals a 14.0\u00d77.7 cm endometrial carcinoma with both endometrioid and undifferentiated components, showing >50% myometrial invasion and cervical stromal involvement. All lymph nodes and extrauterine sites are negative, corresponding to pT2b N0.",
+  "patient_notes": "Your report shows a high-grade uterine cancer that grew into the muscle and the neck of the uterus but did not spread to lymph nodes. Because this is an aggressive subtype, we recommend additional treatment with chemotherapy along with pelvic radiation and a vaginal brachytherapy boost. This combined approach aims to eliminate any remaining cancer cells and reduce the risk of recurrence. We will guide you through each step of your treatment plan.",
   "verification": {
-    "passed": true,
-    "confidence": 0.87,
-    "assessment": "Extraction is largely accurate and complete, with the single notable correction being inclusion of the endometrioid component in the cancer subtype."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "Staging information from the report was correctly interpreted as FIGO stage IIB and pT2b N0. All extracted fields align with the pathology findings and NCCN recommendations. Medical inference validation identified issues: Subtype and staging are correct and consistent, but treatment should explicitly include chemotherapy, external beam radiation, and vaginal brachytherapy per NCCN for high\u2010grade stage II disease.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:20:08.514235",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Systemic therapy \u00b1 EBRT \u00b1 vaginal brachytherapy' to 'Systemic therapy + EBRT + vaginal brachytherapy'"
+    }
   }
 }

@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "Stage IA",
-  "final_pathologic_stage": "pT1a pN0 (0/25) pM0",
-  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA Grade 3 endometrioid endometrial carcinoma with LVSI; pelvic EBRT is an alternative option. Routine chemotherapy is not indicated.",
-  "description": "Pathology shows a 4 cm FIGO grade 3 endometrioid adenocarcinoma of the endometrium with 36% myometrial invasion, lymphovascular space involvement, endocervical mucosal involvement, and negative lymph nodes.",
-  "patient_notes": "Your report shows a high-grade endometrial cancer confined to your uterus with minimal spread into the uterine muscle and no lymph node involvement. To lower the risk of the cancer returning in the vaginal area, we recommend targeted radiation inside the vagina (vaginal brachytherapy). This treatment is focused and generally well tolerated. We will discuss the details and schedule next steps soon.",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 M0",
+  "recommended_treatment": "Vaginal brachytherapy",
+  "description": "Pathology confirms endometrioid endometrial adenocarcinoma, FIGO grade 3, stage IA, with 36% myometrial invasion, lymphovascular space involvement, and endocervical mucosal extension; all lymph nodes are negative.",
+  "patient_notes": "Your cancer was confined to the lining of the uterus and less than half of the muscle wall. The lymph nodes showed no cancer spread. Although this is a high-grade tumor, the surgery removed all visible disease. Additional treatment such as vaginal radiation may be considered to lower the risk of recurrence based on current guidelines.",
   "verification": {
-    "passed": true,
-    "confidence": 0.9,
-    "assessment": "Extraction is accurate and complete. All key clinical, staging, and treatment recommendation details align with the source report and NCCN guidelines."
+    "passed": false,
+    "confidence": 0.85,
+    "assessment": "Staging is accurate as FIGO IA, pT1a pN0 M0; adjuvant treatment recommendation was omitted and should be vaginal brachytherapy per NCCN guidelines.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Field is 'Not specified' but NCCN guidelines recommend adjuvant therapy for stage IA grade 3 endometrioid carcinoma"
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:36:05.525966",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Vaginal brachytherapy'. Reason: Field is 'Not specified' but NCCN guidelines recommend adjuvant therapy for stage IA grade 3 endometrioid carcinoma"
+    }
   }
 }

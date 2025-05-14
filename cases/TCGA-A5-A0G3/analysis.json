@@ -1,54 +1,64 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Uterine serous carcinoma",
-  "FIGO Stage": "IIC",
-  "Final Pathologic Stage": "pT2b N1 Mx",
-  "Recommended Treatment": "Adjuvant carboplatin\u2013paclitaxel chemotherapy (\u00b1 trastuzumab if HER2-positive) plus pelvic external beam radiation therapy and vaginal brachytherapy per NCCN guidelines for node-positive uterine serous carcinoma.",
-  "Description": "Surgical pathology demonstrates a 4.5 cm papillary serous adenocarcinoma of the uterus with deep (outer half) myometrial invasion, endocervical stromal involvement, lymphovascular invasion, and multiple positive regional lymph nodes, staged pT2b N1 Mx (FIGO IIC).",
-  "Patient Notes": "The pathology report shows a high-grade serous cancer in the uterus that extended into the muscle layer and nearby lymph nodes. To reduce the chance of recurrence, you will receive chemotherapy with carboplatin and paclitaxel, possibly with trastuzumab if your tumor is HER2-positive, along with targeted radiation to the pelvic area and vaginal cuff.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IIIC2",
+  "pathologic_stage": "pT2b N2 Mx",
+  "recommended_treatment": "Total hysterectomy and bilateral salpingo-oophorectomy with surgical staging followed by carboplatin and paclitaxel chemotherapy plus external beam pelvic radiation and vaginal brachytherapy",
+  "description": "Surgical pathology reveals uterine papillary serous adenocarcinoma measuring 4.5 cm with deep myometrial invasion, lymphovascular space invasion, cervical stromal involvement, and metastases in pelvic, common iliac, and para-aortic lymph nodes; omentum and ovaries are negative. Pathologic staging is pT2b N2 Mx, corresponding to FIGO stage IIIC2.",
+  "patient_notes": "This report shows uterine serous carcinoma with spread to pelvic, common iliac, and para-aortic lymph nodes. Your uterus, ovaries, and fallopian tubes were removed, and no cancer was found in the ovaries or omentum. To lower the chance of recurrence, you will receive carboplatin and paclitaxel chemotherapy combined with external beam pelvic radiation and a vaginal brachytherapy boost. We will support you through each step of this treatment plan.",
   "verification": {
     "passed": false,
-    "confidence": 0.85,
-    "assessment": "Extraction is largely accurate and comprehensive but contains a single key error in the description of the depth of myometrial invasion; otherwise fields align with the report and NCCN guidance.",
+    "confidence": 0.95,
+    "assessment": "Staging information is inaccurate; nodal metastases to para-aortic nodes requires FIGO IIIC2 and pN2 classification. Other fields are accurate.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "cancer_subtype": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "figo_stage": {
-        "correct": true,
-        "confidence": 0.85,
-        "issues": ""
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "FIGO stage IIC is incorrect in the context of documented lymph node metastases; para-aortic involvement requires Stage IIIC2 according to FIGO staging for endometrial carcinoma."
       },
       "pathologic_stage": {
-        "correct": true,
+        "correct": false,
         "confidence": 0.9,
-        "issues": ""
+        "issues": "Pathologic stage pT2b N1 Mx misclassifies nodal status. Metastases in para-aortic nodes should be coded as N2, not N1."
       },
       "recommended_treatment": {
         "correct": true,
         "confidence": 0.8,
-        "issues": "Recommendation is consistent with NCCN node-positive uterine serous carcinoma guidelines; no omissions."
+        "issues": ""
       },
       "description": {
         "correct": false,
-        "confidence": 0.8,
-        "issues": "States 'deep (outer half) myometrial invasion' but the report documents tumor invasion of the inner half of the myometrium."
+        "confidence": 0.9,
+        "issues": "Description repeats incorrect FIGO stage IIC and pT2b N1 Mx rather than the correct IIIC2 and pT2b N2 Mx."
       },
       "patient_notes": {
-        "correct": true,
-        "confidence": 0.8,
-        "issues": ""
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Patient notes mirror the wrong staging (IIC) and nodal classification (N1) instead of IIIC2 and N2, and lack mention of para-aortic involvement."
       }
     },
     "incorrect_fields": [
-      "description"
-    ]
+      "figo_stage",
+      "pathologic_stage",
+      "description",
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:17:38.822104",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IIC' to 'IIIC2'. Reason: FIGO stage IIC is incorrect in the context of documented lymph node metastases; para-aortic involvement requires Stage IIIC2 according to FIGO staging for endometrial carcinoma.",
+      "pathologic_stage": "Changed from 'pT2b N1 Mx' to 'pT2b N2 Mx'. Reason: Pathologic stage pT2b N1 Mx misclassifies nodal status. Metastases in para-aortic nodes should be coded as N2, not N1.",
+      "description": "Changed from 'Surgical pathology reveals uterine papillary serous adenocarcinoma measuring 4.5 cm with deep myometrial invasion, lymphovascular space invasion, cervical stromal involvement, and metastases in pelvic, common iliac, and para-aortic lymph nodes; omentum and ovaries are negative. Pathologic staging is pT2b N1 Mx, corresponding to FIGO stage IIC.' to 'Surgical pathology reveals uterine papillary serous adenocarcinoma measuring 4.5 cm with deep myometrial invasion, lymphovascular space invasion, cervical stromal involvement, and metastases in pelvic, common iliac, and para-aortic lymph nodes; omentum and ovaries are negative. Pathologic staging is pT2b N2 Mx, corresponding to FIGO stage IIIC2.'. Reason: Description repeats incorrect FIGO stage IIC and pT2b N1 Mx rather than the correct IIIC2 and pT2b N2 Mx.",
+      "patient_notes": "Changed from 'This report shows a type of uterine cancer called serous carcinoma that was found in the muscle of your uterus and cervix and has spread to nearby lymph nodes. Your uterus, ovaries, and fallopian tubes were removed, and no cancer was found in the ovaries or omentum. To lower the chance of the cancer coming back, you will receive chemotherapy with carboplatin and paclitaxel along with radiation to the pelvis and a vaginal boost. We will support you through each step of this treatment plan.' to 'This report shows uterine serous carcinoma with spread to pelvic, common iliac, and para-aortic lymph nodes. Your uterus, ovaries, and fallopian tubes were removed, and no cancer was found in the ovaries or omentum. To lower the chance of recurrence, you will receive carboplatin and paclitaxel chemotherapy combined with external beam pelvic radiation and a vaginal brachytherapy boost. We will support you through each step of this treatment plan.'. Reason: Patient notes mirror the wrong staging (IIC) and nodal classification (N1) instead of IIIC2 and N2, and lack mention of para-aortic involvement."
+    }
   }
 }

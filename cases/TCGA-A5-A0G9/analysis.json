@@ -1,14 +1,53 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "FIGO_stage": "Stage IB",
-  "final_pathologic_stage": "pT1b pN0 M0",
-  "recommended_treatment": "Adjuvant external beam pelvic radiation therapy with vaginal brachytherapy; consider addition of adjuvant chemotherapy with carboplatin and paclitaxel per NCCN guidelines.",
-  "description": "The pathology report describes a FIGO grade III endometrioid adenocarcinoma of the uterus with greater than 50% myometrial invasion and lymphovascular invasion, no cervical or nodal involvement, and no evidence of metastatic disease.",
-  "patient_notes": "You have an endometrial (uterine) cancer that was removed by surgery, and the tumor invaded more than half of the uterine wall but did not spread to lymph nodes or other organs. Because of the depth of invasion and high tumor grade, additional treatment is recommended. The usual next steps include radiation therapy to the pelvis and inside the vagina, and possibly chemotherapy to lower the chance of the cancer coming back.",
+  "figo_stage": "Stage IB",
+  "pathologic_stage": "pT1b pN0 M0",
+  "recommended_treatment": "Adjuvant pelvic external beam radiation therapy with vaginal brachytherapy and systemic chemotherapy",
+  "description": "The specimen reveals a Grade III endometrioid adenocarcinoma with >50% myometrial invasion, lymphovascular invasion, and no cervical or nodal metastases (pT1b pN0 M0). Surgical staging included total hysterectomy with unilateral salpingo-oophorectomy and comprehensive lymph node dissection, all negative for metastasis.",
+  "patient_notes": "Your diagnosis is endometrial cancer that was removed by surgery and found to have invaded more than half of the uterine muscle but did not spread to lymph nodes. To lower the chance of return, we recommend targeted radiation to your pelvis and vagina and a course of chemotherapy. This combined approach is standard for your stage of disease and is aimed at improving long-term outcomes.",
   "verification": {
     "passed": true,
-    "confidence": 0.85,
-    "assessment": "The extraction correctly captured the organ, main subtype, inferred stage, pathologic stage, and treatment plan. It omits key pathologic details (grade, LVSI, minor histologic components) that should be included for completeness."
+    "confidence": 0.9,
+    "assessment": "The FIGO stage IB (pT1b pN0 M0) is accurately assigned based on >50% myometrial invasion, absence of cervical and nodal metastases. All findings and treatment recommendations align with NCCN guidelines for high-grade stage IB endometrioid adenocarcinoma with LVSI.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:18:52.980629"
   }
 }

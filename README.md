@@ -18,6 +18,7 @@ The system employs a multi-stage approach:
 2. **Semantic search** to find relevant NCCN guidelines for each report
 3. **Information extraction** using Large Language Models (LLMs)
 4. **Verification and correction** of extracted information through a separate verification agent
+5. **Statistical analysis** of processed reports for insights and quality assessment
 
 This comprehensive approach ensures high accuracy and reliability while providing both professional medical summaries and patient-friendly explanations.
 
@@ -34,6 +35,8 @@ This comprehensive approach ensures high accuracy and reliability while providin
   - Patient-friendly notes
 - **Two-stage verification system** with automatic correction
 - **Field-specific confidence scores** for verification results
+- **Statistical analysis tools** for aggregating and summarizing results across multiple reports
+- **Parallel processing** capabilities for efficient batch processing
 - **Efficient processing** with caching for embeddings and semantic search
 - **Batch processing** of multiple reports
 - **Detailed logging** for tracking and debugging
@@ -72,7 +75,7 @@ This comprehensive approach ensures high accuracy and reliability while providin
 Run the analyzer on a directory of case folders:
 
 ```bash
-python pathology-analyzer.py
+python main.py
 ```
 
 Each case folder should contain a PDF pathology report. The analyzer will create an `analysis.json` file in each folder with the extracted information.
@@ -80,7 +83,7 @@ Each case folder should contain a PDF pathology report. The analyzer will create
 ### Command-line Options
 
 ```bash
-python pathology-analyzer.py --help
+python main.py --help
 ```
 
 Options include:
@@ -91,6 +94,7 @@ Options include:
 - `--nccn-pdf PATH`: Specify path to NCCN guidelines PDF
 - `--api-key KEY`: Provide OpenAI API key
 - `--model MODEL`: Specify OpenAI model to use
+- `--parallel`: Enable parallel processing for batch operations
 
 ### Output Format
 
@@ -116,6 +120,21 @@ The analyzer produces a JSON file with the following structure:
 }
 ```
 
+### Statistical Analysis
+
+After processing multiple reports, you can generate statistical summaries:
+
+```bash
+python -c "from analysis.utils import collect_results_parallel; from pathlib import Path; import json; print(json.dumps(collect_results_parallel(Path('./cases')), indent=2))"
+```
+
+This will produce a comprehensive summary with metrics such as:
+- Total cases processed
+- Success rates
+- Distribution of cancer types
+- Verification statistics
+- Field presence metrics (FIGO staging, pathologic staging, etc.)
+
 ## Architecture
 
 The system architecture consists of several key components:
@@ -128,7 +147,9 @@ The system architecture consists of several key components:
 
 4. **Verification Agent**: Provides independent verification of extracted information and suggests corrections.
 
-5. **Main Processing Pipeline**: Coordinates the entire workflow from PDF processing to result storage.
+5. **Analysis Pipeline**: Coordinates the entire workflow from PDF processing to result storage.
+
+6. **Statistical Analysis Tools**: Processes and summarizes results across multiple reports.
 
 ![Architecture Diagram](path_analysis.png)
 
@@ -139,17 +160,42 @@ The system architecture consists of several key components:
 - **Machine Learning**: OpenAI API, Vector Embeddings
 - **Data Processing**: NumPy, tiktoken
 - **Image Processing**: PIL (Python Imaging Library)
+- **Concurrent Processing**: ThreadPoolExecutor for parallel operations
 - **Utilities**: tqdm (progress bars), tenacity (retry logic)
 
 ## Project Structure
 
 ```
 pathology-analyzer/
-├── pathology-analyzer.py    # Main application
-├── requirements.txt         # Dependencies
-├── logs/                    # Log files
-├── cases/                   # Case folders containing PDFs
-├── uterine_core.pdf         # NCCN guidelines
+├── main.py                # Main application entry point
+├── config.py              # Configuration settings
+├── requirements.txt       # Dependencies
+├── analysis/              # Analysis tools and utilities
+│   ├── __init__.py
+│   ├── process.py         # Core processing logic
+│   └── utils.py           # Statistical analysis utilities
+├── embedding/             # Embedding and retrieval functionality
+│   ├── __init__.py
+│   ├── embed.py           # Embedding generation
+│   └── retrieval.py       # Semantic search
+├── llm/                   # LLM interaction
+│   ├── __init__.py
+│   ├── client.py          # OpenAI API client
+│   ├── prompts.py         # System prompts
+│   └── verification.py    # Verification logic
+├── text_extraction/       # PDF text extraction
+│   ├── __init__.py
+│   ├── extract.py         # Text extraction with fallbacks
+│   └── compare.py         # Extraction method comparison
+├── utils/                 # Utility functions
+│   ├── __init__.py
+│   ├── json.py            # JSON handling
+│   ├── logger.py          # Logging setup
+│   └── text.py            # Text processing
+├── logs/                  # Log files
+├── cases/                 # Case folders containing PDFs
+├── archived/              # Previous versions
+├── uterine_core.pdf       # NCCN guidelines
 └── nccn_embeddings_cache.pkl # Cached embeddings
 ```
 
@@ -170,7 +216,7 @@ This project is licensed under the MIT License - see below for details:
 ```
 MIT License
 
-Copyright (c) 2025 Your Name
+Copyright (c) 2025 Reubin George
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -197,6 +243,7 @@ SOFTWARE.
 - **API Costs**: The system makes multiple calls to OpenAI API, which has usage costs.
 - **Cache Management**: The embedding cache grows with the number of processed guidelines.
 - **OCR Performance**: The OCR fallback is significantly slower but provides reliability for scanned documents.
+- **Parallel Processing**: The parallel processing capability significantly improves throughput for batch operations but requires more system resources.
 
 ## References
 

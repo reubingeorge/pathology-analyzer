@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "FIGO Stage IA, Grade 3",
-  "final_pathologic_stage": "pT1a pN0 (M0 presumed)",
-  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA, grade 3 endometrioid endometrial carcinoma",
-  "description": "High\u2010grade (FIGO grade 3) endometrioid adenocarcinoma of the uterine corpus, confined to the endometrium with <50% myometrial invasion (pT1a), no lymphovascular invasion, and negative lymph nodes (pN0).",
-  "patient_notes": "The report shows a high\u2010grade cancer of the lining of your uterus that is small and has not spread beyond the uterus or to lymph nodes (Stage IA). You have already had surgery to remove the uterus, cervix, tubes, and ovaries. To lower the chance of cancer returning, the team recommends targeted radiation delivered inside the vagina (vaginal brachytherapy). Your care team will discuss scheduling and any side effects to watch for.",
+  "figo_stage": "Stage IA",
+  "pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Vaginal brachytherapy with or without external beam pelvic radiotherapy",
+  "description": "High-grade endometrioid adenocarcinoma (FIGO grade III) measuring 4.0 x 3.8 x 1.3 cm with minimal (<1 mm) myometrial invasion, no cervical involvement, negative lymph nodes (pT1a pN0), and negative margins.",
+  "patient_notes": "Your pathology report shows a type of endometrial cancer that was removed completely and confined to the uterus with only minimal invasion. No lymph node involvement was found. Based on the tumor\u2019s high-grade features, further therapy such as radiation to the pelvis, possibly with vaginal treatment and/or chemotherapy, may be recommended. Your treatment team will discuss these options and support you through the next steps.",
   "verification": {
-    "passed": true,
-    "confidence": 0.85,
-    "assessment": "The extraction accurately captures the key diagnostic and staging elements and offers an appropriate treatment recommendation. Consider adding tumor size, margin status, and ancillary findings for completeness."
+    "passed": false,
+    "confidence": 0.8,
+    "assessment": "Treatment recommendation overstates systemic therapy; NCCN guidelines for stage IA grade 3 LVSI-negative endometrioid adenocarcinoma recommend vaginal brachytherapy \u00b1 pelvic EBRT without routine chemotherapy.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Includes systemic therapy which is not recommended for FIGO IA grade 3 LVSI-negative endometrioid adenocarcinoma per NCCN guidelines."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:35:26.325580",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Systemic therapy with or without external beam radiotherapy and vaginal brachytherapy, or external beam radiotherapy with or without vaginal brachytherapy' to 'Vaginal brachytherapy with or without external beam pelvic radiotherapy'. Reason: Includes systemic therapy which is not recommended for FIGO IA grade 3 LVSI-negative endometrioid adenocarcinoma per NCCN guidelines."
+    }
   }
 }

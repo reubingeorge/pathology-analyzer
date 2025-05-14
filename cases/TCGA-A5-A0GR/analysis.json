@@ -1,55 +1,62 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IB",
-  "Final Pathologic Stage": "pT1b pN0 Mx (Stage IB)",
-  "Recommended Treatment": "Adjuvant vaginal brachytherapy following total hysterectomy with bilateral salpingo-oophorectomy; observation alone is an acceptable alternative for stage IB, grade 2 endometrioid carcinoma (Category 2A).",
-  "Description": "The specimen shows a grade 2 endometrioid endometrial adenocarcinoma with minimal superficial myometrial invasion (1.0 mm), no lymphovascular invasion, and negative lymph nodes, corresponding to FIGO Stage IB.",
-  "Patient Notes": "Your pathology shows a moderately differentiated uterine cancer that has only superficially invaded the muscle layer and has not spread to lymph nodes. You have already had surgery to remove the uterus and ovaries. Based on current guidelines, we recommend a form of targeted internal radiation (vaginal brachytherapy) to reduce the risk of recurrence, although careful observation without further treatment is also an option for your stage of disease.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IB",
+  "pathologic_stage": "pT1b pN0 Mx",
+  "recommended_treatment": "External beam radiotherapy with or without vaginal brachytherapy",
+  "description": "Specimen shows grade 2 endometrioid adenocarcinoma with clear cell changes confined to an endometrial polyp with 1.0 mm superficial myometrial invasion. All sampled lymph nodes are negative, and final pathologic stage is IB, N0, Mx. Lymphovascular space invasion status not specified.",
+  "patient_notes": "Your pathology shows an early\u2010stage uterine cancer that was fully removed and has not spread to lymph nodes. Based on the minimal invasion and grade 2 histology, we recommend external beam radiation therapy, with vaginal brachytherapy as an option. Your care team will personalize the treatment plan and discuss any questions you have.",
   "verification": {
     "passed": false,
     "confidence": 0.85,
-    "assessment": "The extraction captures the key stage and treatment recommendation accurately, but it omits the mixed clear cell component and incorrectly infers lymphovascular invasion status.  A revision to include all histologic details and avoid unsupported LVSI statements is recommended.",
+    "assessment": "FIGO staging IB and pT1b N0 Mx are correct; however, adjuvant treatment recommendations should follow NCCN guidelines for intermediate\u2010risk stage IB grade 2 endometrioid carcinoma (EBRT \u00b1 VBT) without systemic therapy.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "The report describes an endometrial carcinoma in the uterus; 'Uterine cancer' is acceptable though more specific 'endometrial carcinoma' could be used."
+        "confidence": 1.0,
+        "issues": ""
       },
       "cancer_subtype": {
-        "correct": false,
-        "confidence": 0.6,
-        "issues": "The extraction lists 'Endometrioid adenocarcinoma' but omits the reported clear cell changes/mixed component."
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "The report stage is IB, N0, Mx; 'Stage IB' is correctly captured."
+        "confidence": 1.0,
+        "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.8,
-        "issues": "The extracted 'pT1b pN0 Mx (Stage IB)' matches the report comment, although the report does not explicitly assign pT1b."
+        "confidence": 1.0,
+        "issues": ""
       },
       "recommended_treatment": {
-        "correct": true,
-        "confidence": 0.9,
-        "issues": "Recommendation of vaginal brachytherapy with observation as an alternative for Stage IB, grade 2 endometrioid carcinoma is consistent with NCCN Category 2A guidance."
+        "correct": false,
+        "confidence": 0.95,
+        "issues": "Does not align with NCCN guidelines for stage IB grade 2 endometrioid carcinoma; systemic therapy is not indicated in the absence of high\u2010risk features."
       },
       "description": {
         "correct": false,
-        "confidence": 0.7,
-        "issues": "The description adds 'no lymphovascular invasion' which is not stated in the report, and omits the clear cell changes noted in the pathology."
+        "confidence": 0.9,
+        "issues": "States 'no lymphovascular invasion' although LVSI status was not reported."
       },
       "patient_notes": {
-        "correct": true,
+        "correct": false,
         "confidence": 0.9,
-        "issues": "Notes accurately reflect grade 2 superficial invasion, negative nodes, prior surgery, and treatment options in patient-friendly language."
+        "issues": "Suggests chemotherapy when NCCN indicates radiation alone (EBRT \u00b1 VBT) for intermediate\u2010risk stage IB grade 2 disease."
       }
     },
     "incorrect_fields": [
-      "cancer_subtype",
-      "description"
-    ]
+      "recommended_treatment",
+      "description",
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:27:29.061401",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Systemic therapy with or without external beam radiotherapy and with or without vaginal brachytherapy; or external beam radiotherapy with or without vaginal brachytherapy' to 'External beam radiotherapy with or without vaginal brachytherapy'. Reason: Does not align with NCCN guidelines for stage IB grade 2 endometrioid carcinoma; systemic therapy is not indicated in the absence of high\u2010risk features.",
+      "description": "Changed from 'Specimen shows grade 2 endometrioid adenocarcinoma with clear cell changes confined to an endometrial polyp with 1.0 mm superficial myometrial invasion and no lymphovascular invasion. All sampled lymph nodes are negative, and final pathologic stage is IB, N0, Mx.' to 'Specimen shows grade 2 endometrioid adenocarcinoma with clear cell changes confined to an endometrial polyp with 1.0 mm superficial myometrial invasion. All sampled lymph nodes are negative, and final pathologic stage is IB, N0, Mx. Lymphovascular space invasion status not specified.'. Reason: States 'no lymphovascular invasion' although LVSI status was not reported.",
+      "patient_notes": "Changed from 'Your pathology shows an early-stage uterine cancer that was fully removed and has not spread to lymph nodes. Based on the minimal invasion into the uterus, we recommend radiation therapy to reduce the risk of recurrence; chemotherapy may also be considered and vaginal brachytherapy could be part of the plan. Your care team will personalize the treatment approach and discuss any questions you have.' to 'Your pathology shows an early\u2010stage uterine cancer that was fully removed and has not spread to lymph nodes. Based on the minimal invasion and grade 2 histology, we recommend external beam radiation therapy, with vaginal brachytherapy as an option. Your care team will personalize the treatment plan and discuss any questions you have.'. Reason: Suggests chemotherapy when NCCN indicates radiation alone (EBRT \u00b1 VBT) for intermediate\u2010risk stage IB grade 2 disease."
+    }
   }
 }

@@ -1,17 +1,60 @@
 {
-  "CancerOrganType": "Uterine cancer",
-  "CancerSubtype": "Endometrioid adenocarcinoma",
-  "FIGOStage": "IB (grade II)",
-  "FinalPathologicStage": "pT1b pN0 pM0",
-  "RecommendedTreatment": [
-    "Observation",
-    "Adjuvant vaginal brachytherapy"
-  ],
-  "Description": "The report documents a grade II endometrioid adenocarcinoma of the uterus with less than 50% myometrial invasion, negative surgical margins, and no lymph node metastases (0/4). Pathologic staging is pT1b pN0 pM0 (FIGO IB).",
-  "PatientNotes": "Your pathology report shows a moderate-grade uterine cancer that was confined to the inner half of the uterus and did not spread to nearby lymph nodes. Surgical margins are clear, meaning the tumor was completely removed. Based on these findings, you may not need additional chemotherapy; we may recommend targeted radiation (vaginal brachytherapy) to lower the chance of recurrence. We will discuss observation versus a brief course of vaginal radiation to best support your recovery.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy",
+  "description": "Stage IB grade 2 endometrioid adenocarcinoma of the uterus with less than 50% myometrial invasion, negative lymph nodes, and clear surgical margins following hysterectomy and bilateral salpingo-oophorectomy.",
+  "patient_notes": "Your pathology shows a moderate-grade endometrial cancer that was confined to your uterus with no spread to lymph nodes or other organs (Stage IB). The tumor was completely removed and the surgical margins are clear. To reduce the chance of the cancer returning in the vaginal area, we recommend targeted radiation therapy inside the vagina (vaginal brachytherapy). This approach is effective and minimizes exposure to surrounding tissues.",
   "verification": {
-    "passed": true,
-    "confidence": 0.88,
-    "assessment": "The extraction is accurate and complete for the requested fields. Additional anatomic and LVSI details could be captured for comprehensive documentation."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "Staging is accurate: Pathologic stage pT1b pN0 corresponds to FIGO stage IB based on less than 50% myometrial invasion and no nodal involvement. Grade 2 disease with negative margins and no lymphovascular invasion supports adjuvant vaginal brachytherapy per NCCN guidelines. Medical inference validation identified issues: Less than 50% myometrial invasion corresponds to FIGO stage IA and pT1a; IB and pT1b require invasion \u226550%.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "pathologic_stage"
+    ],
+    "timestamp": "2025-05-14T01:32:58.519692",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IB' to 'IA'",
+      "pathologic_stage": "Changed from 'pT1b pN0' to 'pT1a pN0'"
+    }
   }
 }

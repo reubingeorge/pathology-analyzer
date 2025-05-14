@@ -1,55 +1,62 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "IA",
-  "Final Pathologic Stage": "pT1b, pN0",
-  "Recommended Treatment": "Observation without adjuvant therapy per NCCN guidelines for Stage IA, grade 1 endometrioid carcinoma",
-  "Description": "A grade 1 endometrioid adenocarcinoma involving the corpus, fundus, and lower uterine segment with invasion into the inner half of the myometrium, no lymphovascular invasion, and negative pelvic lymph nodes, consistent with Stage IA disease.",
-  "Patient Notes": "Your pathology report shows a low-grade uterine cancer that was confined to the inner layer of the uterine muscle and did not spread to lymph nodes. The surgery removed the tumor completely, and because it is stage IA with favorable features, no additional treatment is recommended. You will have regular follow-up visits to monitor your recovery and ensure there are no changes.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a",
+  "recommended_treatment": "Observation",
+  "description": "Endometrioid adenocarcinoma of the uterus measuring 7.7 cm with superficial myometrial invasion (<50%), grade 1, no lymphovascular invasion, and negative pelvic lymph nodes consistent with pathologic stage pT1b pN0.",
+  "patient_notes": "You have early-stage, low-grade uterine cancer that was fully removed and has not spread to lymph nodes. To reduce the risk of the cancer returning in the vagina, we recommend a targeted radiation treatment called vaginal brachytherapy. We will also schedule regular follow-up visits to monitor your health.",
   "verification": {
     "passed": false,
-    "confidence": 0.85,
-    "assessment": "Except for the mismatch between the extracted FIGO stage and the reported pT1b designation (with downstream impact on treatment), the extraction is accurate and complete.",
+    "confidence": 0.9,
+    "assessment": "The extracted data accurately reflects the pathology report\u2019s staging, subtype, and recommended adjuvant therapy based on NCCN guidelines. Medical inference validation identified issues: Endometrioid adenocarcinoma with <50% myometrial invasion and grade 1 is FIGO stage IA (pT1a) and low-risk, advising observation per NCCN guidelines.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "cancer_subtype": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "figo_stage": {
-        "correct": false,
-        "confidence": 0.8,
-        "issues": "Extracted FIGO stage IA is inconsistent with the reported pathologic T stage (pT1b corresponds to FIGO IB)."
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 1.0,
         "issues": ""
       },
       "recommended_treatment": {
-        "correct": false,
-        "confidence": 0.75,
-        "issues": "Recommendation of observation is appropriate for Stage IA, but if the true pathologic stage is IB (pT1b), NCCN guidelines suggest consideration of adjuvant vaginal brachytherapy for grade 1 IB tumors."
+        "correct": true,
+        "confidence": 0.85,
+        "issues": ""
       },
       "description": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 0.85,
         "issues": ""
       },
       "patient_notes": {
         "correct": true,
-        "confidence": 0.9,
+        "confidence": 0.85,
         "issues": ""
       }
     },
     "incorrect_fields": [
       "figo_stage",
+      "pathologic_stage",
       "recommended_treatment"
-    ]
+    ],
+    "timestamp": "2025-05-14T01:28:09.678039",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IB' to 'IA'",
+      "pathologic_stage": "Changed from 'pT1b, pN0' to 'pT1a'",
+      "recommended_treatment": "Changed from 'Postoperative vaginal brachytherapy' to 'Observation'"
+    }
   }
 }

@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IA, Grade 1 of 3",
-  "Final Pathologic Stage": "AJCC pT1b pNx",
-  "Recommended Treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, Grade 1 endometrioid carcinoma",
-  "Description": "Surgical pathology shows a FIGO grade 1 endometrioid adenocarcinoma of the endometrium with superficial myometrial invasion of less than one-third, no lymphovascular invasion, and negative lymph nodes (AJCC pT1b pNx).",
-  "Patient Notes": "Your report indicates a low-grade endometrial cancer confined to the inner muscle layer of the uterus that was completely removed by surgery. No cancer was found in your lymph nodes. Because this is a low-risk tumor, no further treatment is recommended right now, and we will follow you with regular check-ups.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 M0",
+  "recommended_treatment": "Observation and routine surveillance",
+  "description": "Endometrioid adenocarcinoma, FIGO grade I, with superficial myometrial invasion (<1/3) confined to the uterus, negative lymph nodes, no angiolymphatic invasion or extrauterine spread.",
+  "patient_notes": "You have a low-grade endometrial cancer that was removed by hysterectomy. The cancer was confined to the inner muscle layer of the uterus with no spread to lymph nodes or other organs. Based on these findings, no additional treatment is needed other than regular follow-up visits. We will continue routine monitoring to ensure your health.",
   "verification": {
-    "passed": true,
-    "confidence": 0.85,
-    "assessment": "The extracted data accurately reflect the key diagnostic, staging, and management details from the report. A few additional details (tumor dimensions, nodal counts, LVSI status) could enhance completeness but do not affect the core extraction."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "The extraction is accurate except for the pathologic T classification; superficial invasion (<1/3 myometrium) warrants pT1a rather than pT1b.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "No issues"
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.95,
+        "issues": "Extracted pT1b does not align with tumor invasion of less than one-third of the myometrium, which corresponds to pT1a under current AJCC/TNM guidelines."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "No issues"
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "No issues"
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "No issues"
+      }
+    },
+    "incorrect_fields": [
+      "pathologic_stage"
+    ],
+    "timestamp": "2025-05-14T01:26:06.464366",
+    "change_explanations": {
+      "pathologic_stage": "Changed from 'pT1b pN0 M0' to 'pT1a pN0 M0'. Reason: Extracted pT1b does not align with tumor invasion of less than one-third of the myometrium, which corresponds to pT1a under current AJCC/TNM guidelines."
+    }
   }
 }

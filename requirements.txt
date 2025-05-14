@@ -13,3 +13,8 @@ PyPDF2
 # Optional: OCR support (for scanned PDFs)
 pillow
 pytesseract
+
+#Utilities
+python-dotenv
+cdifflib
+statistics

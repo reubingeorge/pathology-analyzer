@@ -1,14 +1,62 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Uterine serous carcinoma",
-  "figo_stage": "Stage II",
-  "final_pathologic_stage": "pT2 N0 M0 (FIGO II)",
-  "recommended_treatment": "Adjuvant platinum-based chemotherapy (carboplatin plus paclitaxel) combined with vaginal brachytherapy with or without pelvic external beam radiation therapy, per NCCN guidelines for Stage II uterine serous carcinoma.",
-  "description": "Surgical pathology reveals a high-grade papillary serous carcinoma of the endometrium measuring 3.2\u00d72.7 cm with less than half myometrial invasion and focal endocervical involvement; all sampled lymph nodes are negative (pT2 N0 M0, FIGO II).",
-  "patient_notes": "The pathology report shows a high-grade type of uterine cancer that was confined to the inner muscle layer and had a small focus in the cervix. No cancer was found in the removed lymph nodes. Based on your stage, we recommend chemotherapy combined with targeted radiation to reduce the risk of recurrence. This combined approach is the standard first-line treatment after your surgery according to current guidelines.",
+  "figo_stage": "IIB",
+  "pathologic_stage": "pT2, pN0, pM0",
+  "recommended_treatment": "Adjuvant chemotherapy with carboplatin and paclitaxel, plus consideration of vaginal brachytherapy and/or external beam radiation therapy; perform HER2 testing.",
+  "description": "High-grade papillary serous carcinoma of the endometrium with less than half myometrial invasion and focal cervical stromal involvement. Surgical margins and all sampled lymph nodes are negative for metastatic disease.",
+  "patient_notes": "Your pathology shows high-grade uterine serous carcinoma with cervical stromal involvement (FIGO stage IIB) and no lymph node spread. Due to high-risk features, adjuvant chemotherapy (carboplatin and paclitaxel) and radiation therapy are recommended to reduce recurrence risk.",
   "verification": {
-    "passed": true,
-    "confidence": 0.9,
-    "assessment": "The extracted data accurately reflect the pathology report findings and align with NCCN guideline recommendations for Stage II uterine serous carcinoma."
+    "passed": false,
+    "confidence": 0.85,
+    "assessment": "FIGO substaging to IIB is required for cervical stromal involvement; adjuvant therapy consistent with guidelines for high-grade uterine serous carcinoma was omitted.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Generic FIGO Stage II given; report indicates stromal cervical involvement requiring substage IIB."
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "No adjuvant therapy recommendations provided; NCCN guidelines for stage IIB uterine serous carcinoma require chemotherapy and consideration of radiotherapy and HER2 testing."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Understates recurrence risk and omits recommendation for adjuvant therapy for high-grade uterine serous carcinoma."
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "recommended_treatment",
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:48:59.874441",
+    "change_explanations": {
+      "figo_stage": "Changed from 'II' to 'IIB'. Reason: Generic FIGO Stage II given; report indicates stromal cervical involvement requiring substage IIB.",
+      "recommended_treatment": "Changed from 'Not specified' to 'Adjuvant chemotherapy with carboplatin and paclitaxel, plus consideration of vaginal brachytherapy and/or external beam radiation therapy; perform HER2 testing.'. Reason: No adjuvant therapy recommendations provided; NCCN guidelines for stage IIB uterine serous carcinoma require chemotherapy and consideration of radiotherapy and HER2 testing.",
+      "patient_notes": "Changed from 'Your surgery removed a high-grade uterine cancer that was confined to the uterus with no spread to lymph nodes. The pathology report shows a low risk of residual disease, but additional treatment may be recommended to reduce the chance of recurrence.' to 'Your pathology shows high-grade uterine serous carcinoma with cervical stromal involvement (FIGO stage IIB) and no lymph node spread. Due to high-risk features, adjuvant chemotherapy (carboplatin and paclitaxel) and radiation therapy are recommended to reduce recurrence risk.'. Reason: Understates recurrence risk and omits recommendation for adjuvant therapy for high-grade uterine serous carcinoma."
+    }
   }
 }

@@ -1,14 +1,64 @@
 {
   "cancer_organ_type": "Uterine cancer",
-  "cancer_subtype": "Endometrioid adenocarcinoma; Uterine serous carcinoma",
-  "FIGO_stage": "IA",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IA",
   "pathologic_stage": "pT1a pN0 MX",
-  "recommended_treatment": "Adjuvant carboplatin + paclitaxel chemotherapy combined with vaginal brachytherapy, with consideration of pelvic external beam radiation therapy per NCCN guidelines for Stage IA high-risk (grade 3 endometrioid and serous) endometrial carcinoma.",
-  "description": "Surgical pathology reveals a 2.5 cm mixed high-grade endometrial carcinoma (70% FIGO grade 3 endometrioid and 30% serous) with superficial (<50%) myometrial invasion, negative cervical/adnexal involvement, clear margins, and no lymph node metastasis (pT1a pN0).",
-  "patient_notes": "Your report shows a high-grade uterine cancer confined to the inner half of the uterus, with two cell types (endometrioid and serous). The cancer has not spread to nearby organs or lymph nodes, and the surgery achieved clear margins. To lower the risk of recurrence, the recommended next steps are chemotherapy (carboplatin and paclitaxel) and targeted radiation to the vaginal area, with possible additional pelvic radiation. This treatment plan follows national guidelines for your specific cancer type and stage.",
+  "recommended_treatment": "Combination of systemic chemotherapy and vaginal brachytherapy",
+  "description": "High-grade uterine serous carcinoma measuring 2.5 cm with 2 mm superficial myometrial invasion confined to the uterus (pT1a pN0 MX), negative margins, and no lymphovascular or nodal involvement.",
+  "patient_notes": "Your cancer is a uterine serous carcinoma confined to the uterus with no spread to lymph nodes or other organs. The tumor is small and invades only the upper layer of the uterine muscle. Based on guidelines, we recommend systemic chemotherapy combined with vaginal brachytherapy to reduce the risk of recurrence. We will support you at every step and discuss the details of each treatment.",
   "verification": {
-    "passed": true,
-    "confidence": 0.95,
-    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment recommendation details. Minor optional data (e.g., LVSI status) could be added for completeness."
+    "passed": false,
+    "confidence": 0.8,
+    "assessment": "The FIGO and pathologic staging are accurate, but the subtype classification and treatment recommendations require correction to align with NCCN guidelines for stage IA high-grade uterine serous carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Mixed histology includes serous component; NCCN guidelines classify any serous presence as uterine serous carcinoma."
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.7,
+        "issues": "NCCN guidelines for stage IA high-grade uterine serous carcinoma recommend systemic chemotherapy and vaginal brachytherapy; external beam radiation therapy is not routinely required."
+      },
+      "description": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Description omits serous histology and should reflect the corrected subtype."
+      },
+      "patient_notes": {
+        "correct": false,
+        "confidence": 0.8,
+        "issues": "Patient notes do not mention serous histology and include EBRT which is not routinely recommended for stage IA serous carcinoma."
+      }
+    },
+    "incorrect_fields": [
+      "cancer_subtype",
+      "recommended_treatment",
+      "description",
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:37:08.707569",
+    "change_explanations": {
+      "cancer_subtype": "Changed from 'Endometrioid adenocarcinoma' to 'Uterine serous carcinoma'. Reason: Mixed histology includes serous component; NCCN guidelines classify any serous presence as uterine serous carcinoma.",
+      "recommended_treatment": "Changed from 'Combination of systemic chemotherapy with external beam radiation therapy and vaginal brachytherapy' to 'Combination of systemic chemotherapy and vaginal brachytherapy'. Reason: NCCN guidelines for stage IA high-grade uterine serous carcinoma recommend systemic chemotherapy and vaginal brachytherapy; external beam radiation therapy is not routinely required.",
+      "description": "Changed from 'High-grade (FIGO grade III) endometrioid adenocarcinoma measuring 2.5 cm with 2 mm superficial myometrial invasion confined to the uterus (pT1a pN0 MX), negative margins, and no lymphovascular or nodal involvement.' to 'High-grade uterine serous carcinoma measuring 2.5 cm with 2 mm superficial myometrial invasion confined to the uterus (pT1a pN0 MX), negative margins, and no lymphovascular or nodal involvement.'. Reason: Description omits serous histology and should reflect the corrected subtype.",
+      "patient_notes": "Changed from 'Your cancer is a high-grade endometrial tumor confined to the uterus with no spread to lymph nodes or other organs. The tumor is small and invades only the upper layer of the uterine muscle. Based on guidelines, we recommend a combination of chemotherapy, pelvic radiation, and vaginal brachytherapy to reduce the risk of recurrence. We will support you at every step and discuss the details of each treatment.' to 'Your cancer is a uterine serous carcinoma confined to the uterus with no spread to lymph nodes or other organs. The tumor is small and invades only the upper layer of the uterine muscle. Based on guidelines, we recommend systemic chemotherapy combined with vaginal brachytherapy to reduce the risk of recurrence. We will support you at every step and discuss the details of each treatment.'. Reason: Patient notes do not mention serous histology and include EBRT which is not routinely recommended for stage IA serous carcinoma."
+    }
   }
 }

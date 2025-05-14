@@ -1,54 +1,60 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Mixed carcinoma: endometrioid adenocarcinoma (FIGO grade 2) and uterine serous carcinoma (FIGO grade 3)",
-  "FIGO Stage": "IA",
-  "Final Pathologic Stage": "pT1a pNx M0 (FIGO IA)",
-  "Recommended Treatment": "Adjuvant chemotherapy with carboplatin and paclitaxel plus vaginal brachytherapy per NCCN guidelines for Stage IA uterine serous carcinoma; consider clinical trial enrollment.",
-  "Description": "Surgical pathology reveals a mixed endometrial carcinoma comprising 90% FIGO grade 2 endometrioid adenocarcinoma and <10% FIGO grade 3 serous carcinoma, with <50% myometrial invasion, no lymphovascular invasion, and negative lymph nodes, consistent with FIGO Stage IA.",
-  "Patient Notes": "The pathology shows a tumor in the uterine lining that has been completely removed and did not spread beyond the inner muscle wall or to lymph nodes. It contains two types of cells, most of which are moderate-grade endometrioid cells and a small portion of high-grade serous cells. To reduce the chance of the cancer returning, the recommended treatment is chemotherapy with carboplatin and paclitaxel plus targeted internal radiation. You may also consider joining a clinical trial to access new therapies.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a, pN0",
+  "recommended_treatment": "Adjuvant carboplatin-paclitaxel chemotherapy and vaginal brachytherapy",
+  "description": "Surgical pathology of a laparoscopic-assisted vaginal hysterectomy and bilateral salpingo-oophorectomy reveals a mixed endometrioid (grade 2) and serous (grade 3) adenocarcinoma of the uterus, predominantly exophytic with less than 50% myometrial invasion (FIGO stage IA). No lymphovascular invasion or nodal metastases were identified.",
+  "patient_notes": "Your pathology report shows a uterine cancer mostly composed of endometrial-type cells with a small high-grade component, and it is stage 1A, meaning it is confined to your uterus. Additional treatment with chemotherapy (carboplatin and paclitaxel) and a short course of targeted vaginal radiation will help lower the risk of the cancer coming back. No cancer was found in your lymph nodes. We will schedule and discuss these treatments to support your recovery.",
   "verification": {
     "passed": false,
     "confidence": 0.8,
-    "assessment": "The extraction is largely accurate and complete in capturing histologic subtype, grade, stage, and treatment recommendations. The only substantive error is the TNM nodal designation, which should reflect pN0 rather than pNx given negative lymph node sampling.",
+    "assessment": "The extracted FIGO stage IA and pathologic stage pT1a, pNX accurately reflect the reported <50% myometrial invasion and lack of nodal assessment. Treatment aligns with NCCN recommendations for mixed endometrioid/serous histology at stage IA. Medical inference validation identified issues: Mixed endometrioid (grade 2) with serous (grade 3) histology mandates serous carcinoma classification and nodal status described as negative supports pN0 staging rather than NX.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.95,
-        "issues": ""
+        "confidence": 0.9,
+        "issues": "None"
       },
       "cancer_subtype": {
         "correct": true,
         "confidence": 0.9,
-        "issues": ""
+        "issues": "None"
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": ""
+        "confidence": 0.95,
+        "issues": "None"
       },
       "pathologic_stage": {
-        "correct": false,
-        "confidence": 0.75,
-        "issues": "Extracted as pT1a pNx M0, but lymph nodes were sampled and found negative; should be pN0."
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
       },
       "recommended_treatment": {
         "correct": true,
-        "confidence": 0.85,
-        "issues": ""
+        "confidence": 0.9,
+        "issues": "None"
       },
       "description": {
         "correct": true,
         "confidence": 0.9,
-        "issues": ""
+        "issues": "None"
       },
       "patient_notes": {
         "correct": true,
         "confidence": 0.9,
-        "issues": ""
+        "issues": "None"
       }
     },
     "incorrect_fields": [
+      "cancer_subtype",
       "pathologic_stage"
-    ]
+    ],
+    "timestamp": "2025-05-14T01:46:14.995126",
+    "change_explanations": {
+      "cancer_subtype": "Changed from 'Endometrioid adenocarcinoma' to 'Uterine serous carcinoma'. Reason: None",
+      "pathologic_stage": "Changed from 'pT1a, pNX' to 'pT1a, pN0'. Reason: None"
+    }
   }
 }

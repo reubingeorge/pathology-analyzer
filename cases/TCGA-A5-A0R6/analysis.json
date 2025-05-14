@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IA",
-  "Final Pathologic Stage": "pT1a Nx M0, Grade 2",
-  "Recommended Treatment": "Primary surgery (total hysterectomy with bilateral salpingo-oophorectomy) completed; for FIGO IA, grade 2, no LVSI and no nodal involvement, NCCN recommends observation or vaginal brachytherapy as adjuvant options.",
-  "Description": "This report documents a FIGO grade 2 endometrioid adenocarcinoma of the uterus with minimal (<10%) myometrial invasion, no lymphovascular invasion, no nodal or ovarian metastasis, and uncertain focal involvement of the fallopian tube. The tumor is confined to the uterus, consistent with Stage IA disease.",
-  "Patient Notes": "Your pathology shows a low-stage uterine cancer that is confined to the lining and has not spread to lymph nodes or other organs. Because it is a low-risk, early-stage tumor, no further treatment beyond what you\u2019ve already had may be needed, although a small internal radiation treatment (vaginal brachytherapy) is an option to reduce recurrence risk. We will discuss the best follow-up plan, which may simply be regular check-ups or include a brief radiation procedure.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IIIA",
+  "pathologic_stage": "pT3a N0 M0",
+  "recommended_treatment": "Systemic therapy \u00b1 external beam pelvic radiotherapy \u00b1 vaginal brachytherapy",
+  "description": "Surgical pathology demonstrated a primary endometrioid adenocarcinoma with superficial myometrial invasion and fallopian tube involvement without lymphovascular or cervical stromal invasion.",
+  "patient_notes": "Your report shows a cancer originating in the lining of the uterus that extended slightly into the uterine muscle and involved the fallopian tube but not lymph nodes or other organs. Based on current guidelines, we recommend chemotherapy with radiation therapy, including possible vaginal brachytherapy, to lower the risk of recurrence.",
   "verification": {
-    "passed": true,
-    "confidence": 0.8,
-    "assessment": "The extractor accurately captured the key diagnostic and staging elements and proposed treatment consistent with NCCN guidance. A few granular pathological details (exact mm invasion depth, lymph node sampling status, and tubal involvement uncertainty) were not pulled but do not materially change the core conclusions."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "FIGO stage IIIA (pT3a N0 M0) is accurate based on adnexal (fallopian tube) involvement without lymphovascular invasion; adjuvant therapy should include systemic chemotherapy with optional pelvic EBRT and vaginal brachytherapy per NCCN guidelines.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.85,
+        "issues": "Contains placeholder null characters inconsistent with NCCN guideline terminology"
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:31:19.788431",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Systemic therapy \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00b1 EBRT \u00b1 vaginal brachytherapy' to 'Systemic therapy \u00b1 external beam pelvic radiotherapy \u00b1 vaginal brachytherapy'. Reason: Contains placeholder null characters inconsistent with NCCN guideline terminology"
+    }
   }
 }

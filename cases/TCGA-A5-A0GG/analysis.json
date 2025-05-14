@@ -1,14 +1,53 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "IA",
-  "Final Pathologic Stage": "pT1a N0 M0",
-  "Recommended Treatment": "No adjuvant therapy; surveillance per NCCN guidelines for stage IA (grade 2) endometrioid endometrial carcinoma without lymphovascular invasion",
-  "Description": "Endometrial biopsy and hysterectomy specimens reveal FIGO grade 2 endometrioid adenocarcinoma with minimal (<10%) myometrial invasion, negative lymph nodes (0/18), and no extrauterine spread.",
-  "Patient Notes": "Your report shows a cancer in the lining of your uterus (endometrioid endometrial carcinoma) that is low-stage and was fully removed by surgery. The tumor only invaded a small portion of the uterine muscle and no cancer was found in the lymph nodes. Because of these favorable findings, national guidelines recommend no additional treatment at this time, only regular follow-up exams.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Observation",
+  "description": "Total hysterectomy and salpingo-oophorectomy revealed a FIGO grade II endometrioid adenocarcinoma with less than 10% myometrial invasion, negative lymph nodes, and no extrauterine spread, consistent with stage IA disease.",
+  "patient_notes": "Your surgery removed the cancer, which was confined to the inner layer of the uterus and had not spread to lymph nodes or other tissues. This is an early stage tumor (Stage IA), and no additional treatment is needed at this time. We will monitor your recovery with regular follow-up visits and imaging to ensure the cancer does not return. Please let us know if you have any questions or new symptoms.",
   "verification": {
     "passed": true,
-    "confidence": 0.9,
-    "assessment": "The extraction is accurate in diagnosis, staging, and treatment recommendation. There is a minor discrepancy in the lymph node count in the description field and omission of the reported minor neuroendocrine component."
+    "confidence": 0.92,
+    "assessment": "All extracted fields accurately reflect the pathology report findings. The tumor is correctly staged as FIGO IA (pT1a pN0 pM0) based on <10% myometrial invasion and negative nodes, and observation aligns with NCCN guidelines for early-stage grade II endometrioid carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.98,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.98,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:21:51.051525"
   }
 }

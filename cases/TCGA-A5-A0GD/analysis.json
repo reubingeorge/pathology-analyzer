@@ -1,57 +1,62 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IA",
-  "Final Pathologic Stage": "pT1b, pN0, pM0",
-  "Recommended Treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for Stage IA, grade 3 endometrioid carcinoma; pelvic external-beam radiation may be considered if additional risk factors are identified.",
-  "Description": "A total abdominal hysterectomy and bilateral salpingo-oophorectomy specimen revealed an endometrioid endometrial adenocarcinoma, FIGO grade II/III, with very superficial myometrial invasion (<20%) and no lymph node or distant metastases (pT1b, pN0, pM0).",
-  "Patient Notes": "Your surgery removed an early-stage endometrial cancer confined to the inner lining of the uterus with very minimal invasion into the muscle layer and no lymph node involvement. The tumor was a common type of endometrial cancer called endometrioid adenocarcinoma and was graded as moderately to poorly differentiated. Because of the higher grade features, we recommend a localized vaginal brachytherapy treatment to lower the risk of recurrence in the vaginal cuff. No evidence of spread beyond the uterus means this is an early stage and the outlook is very favorable.",
+  "cancer_organ_type": "Uterine Neoplasms",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Vaginal brachytherapy",
+  "description": "Endometrioid adenocarcinoma of the uterus, grade II/III, with superficial myometrial invasion (<20%) and no lymph node or extrauterine involvement. Surgical staging revealed pT1a pN0 pM0 corresponding to FIGO stage IA.",
+  "patient_notes": "You have an early-stage endometrial cancer called endometrioid adenocarcinoma that has invaded only the superficial layer of the uterine muscle and has not spread to lymph nodes. You have had a total hysterectomy with removal of your ovaries and fallopian tubes. Because of the high-grade cells, we recommend a vaginal radiation treatment called brachytherapy to help reduce the risk of recurrence.",
   "verification": {
     "passed": false,
     "confidence": 0.85,
-    "assessment": "The extraction captures the primary diagnosis and invasion depth correctly, but the pathologic T stage is mis\u2013recorded and the adjuvant treatment recommendation does not align precisely with NCCN guidance for a grade II, stage IA tumor. Corrections to staging and treatment rationale are needed.",
+    "assessment": "FIGO stage IA is correct, but the pathologic T category was misclassified as pT1b instead of pT1a based on <20% myometrial invasion.",
     "field_issues": {
       "cancer_organ_type": {
-        "correct": true,
+        "correct": false,
         "confidence": 0.9,
-        "issues": "Organ type \u2018Uterine cancer\u2019 correctly reflects primary site (endometrium)."
+        "issues": "Value 'Uterine cancer' does not match the exact NCCN organ type nomenclature."
       },
       "cancer_subtype": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "\u2018Endometrioid adenocarcinoma\u2019 matches report (\u2018endometrial adenocarcinoma, endometrioid type\u2019)."
+        "confidence": 1.0,
+        "issues": ""
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.8,
-        "issues": "FIGO IA is correctly inferred from <20% myometrial invasion, although not explicitly stated in the report."
+        "confidence": 0.95,
+        "issues": ""
       },
       "pathologic_stage": {
         "correct": false,
-        "confidence": 0.9,
-        "issues": "Report text says pT1b but invasion <20% should be staged pT1a; extracted pT1b conflicts with both FIGO IA and the depth of invasion."
+        "confidence": 0.95,
+        "issues": "Report describes <20% myometrial invasion, which is pT1a rather than pT1b."
       },
       "recommended_treatment": {
-        "correct": false,
-        "confidence": 0.7,
-        "issues": "Per NCCN, stage IA, grade 2 (moderately differentiated) often may be observed or receive VBT in select cases; the extraction assumes grade 3 and recommends VBT by default."
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
       },
       "description": {
         "correct": false,
-        "confidence": 0.8,
-        "issues": "Accurately summarizes surgery and invasion but perpetuates the pT1b designation; should read pT1a."
+        "confidence": 0.9,
+        "issues": "Pathologic stage is incorrectly stated as pT1b; description should reflect pT1a."
       },
       "patient_notes": {
-        "correct": false,
-        "confidence": 0.8,
-        "issues": "Clear and compassionate, but repeats the staging error and oversimplifies the grade as \u2018moderately to poorly differentiated\u2019 without clarifying architectural vs nuclear grade."
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
       }
     },
     "incorrect_fields": [
+      "cancer_organ_type",
       "pathologic_stage",
-      "recommended_treatment",
-      "description",
-      "patient_notes"
-    ]
+      "description"
+    ],
+    "timestamp": "2025-05-14T01:20:56.321448",
+    "change_explanations": {
+      "cancer_organ_type": "Changed from 'Uterine cancer' to 'Uterine Neoplasms'. Reason: Value 'Uterine cancer' does not match the exact NCCN organ type nomenclature.",
+      "pathologic_stage": "Changed from 'pT1b pN0 pM0' to 'pT1a pN0 pM0'. Reason: Report describes <20% myometrial invasion, which is pT1a rather than pT1b.",
+      "description": "Changed from 'Endometrioid adenocarcinoma of the uterus, grade II/III, with superficial myometrial invasion (<20%) and no lymph node or extrauterine involvement. Surgical staging revealed pT1b pN0 pM0 corresponding to FIGO stage IA.' to 'Endometrioid adenocarcinoma of the uterus, grade II/III, with superficial myometrial invasion (<20%) and no lymph node or extrauterine involvement. Surgical staging revealed pT1a pN0 pM0 corresponding to FIGO stage IA.'. Reason: Pathologic stage is incorrectly stated as pT1b; description should reflect pT1a."
+    }
   }
 }

@@ -1,54 +1,64 @@
 {
   "cancer_organ_type": "Uterine cancer",
-  "cancer_subtype": "High-grade endometrial adenocarcinoma favoring serous subtype",
+  "cancer_subtype": "Uterine serous carcinoma",
   "figo_stage": "FIGO IA",
-  "final_pathologic_stage": "pT1a N0 Mx",
-  "recommended_treatment": "Adjuvant chemotherapy with carboplatin and paclitaxel for six cycles plus vaginal brachytherapy per NCCN guidelines for stage I uterine serous carcinoma.",
-  "description": "High-grade endometrial adenocarcinoma favoring serous subtype was found confined to the endometrium with no myometrial invasion (pT1a), extensive lymphovascular space invasion, and negative lymph nodes (N0), resulting in FIGO stage IA (pT1a N0 Mx). Surgical margins and parametria are free of tumor.",
-  "patient_notes": "This report shows a high-grade form of uterine cancer limited to the lining of the uterus with no spread to lymph nodes. All surgical margins are clear and no cancer was found in the removed lymph nodes. To reduce the risk of the cancer coming back, NCCN guidelines recommend chemotherapy with carboplatin and paclitaxel along with targeted radiation treatment inside the vagina. Your care team will discuss how to schedule these treatments and manage any side effects.",
+  "pathologic_stage": "pT1a N0 Mx",
+  "recommended_treatment": "Adjuvant platinum-based chemotherapy and vaginal brachytherapy",
+  "description": "High-grade uterine serous carcinoma confined to the endometrium (pT1a) with extensive lymphovascular space invasion; no myometrial invasion, negative pelvic and para-aortic lymph nodes; surgical margins, cervix, parametria, ovaries, and fallopian tubes are free of tumor.",
+  "patient_notes": "Your results show a high-grade serous cancer limited to the inner lining of your uterus with no spread to the muscle or lymph nodes. All margins are clear, and no cancer was found in the removed lymph nodes or ovaries. Based on current guidelines for this type and stage of uterine cancer, we recommend adjuvant chemotherapy with a platinum-based regimen and localized vaginal radiation (brachytherapy) to reduce the risk of recurrence.",
   "verification": {
     "passed": false,
-    "confidence": 0.88,
-    "assessment": "Most fields were accurately captured. The only discrepancy is the overly definitive subtype; the report favors a serous component but stops short of diagnosing pure serous carcinoma.",
+    "confidence": 0.85,
+    "assessment": "Staging was correctly identified as FIGO IA/pT1a N0 Mx, but the histologic subtype was mischaracterized and no guideline-based adjuvant therapy was recommended. Corrections align the subtype with high-grade serous carcinoma and recommend adjuvant platinum-based chemotherapy plus vaginal brachytherapy per NCCN.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
-        "confidence": 0.95,
+        "confidence": 1.0,
         "issues": ""
       },
       "cancer_subtype": {
         "correct": false,
-        "confidence": 0.6,
-        "issues": "The report describes a high-grade endometrial adenocarcinoma with serous features favored, but does not definitively classify it as \u2018uterine serous carcinoma.\u2019"
+        "confidence": 0.95,
+        "issues": "Subtype incorrectly identified as endometrioid; report favors serous component."
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.99,
+        "confidence": 0.95,
         "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.99,
-        "issues": ""
-      },
-      "recommended_treatment": {
-        "correct": true,
         "confidence": 0.9,
         "issues": ""
       },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Not specified is not aligned with NCCN guidelines for high-grade uterine serous carcinoma Stage IA."
+      },
       "description": {
-        "correct": true,
-        "confidence": 0.95,
-        "issues": ""
+        "correct": false,
+        "confidence": 0.85,
+        "issues": "Describes Endometrioid adenocarcinoma instead of serous histology."
       },
       "patient_notes": {
-        "correct": true,
-        "confidence": 0.95,
-        "issues": ""
+        "correct": false,
+        "confidence": 0.85,
+        "issues": "Does not mention recommended adjuvant therapy; histology mischaracterized."
       }
     },
     "incorrect_fields": [
-      "cancer_subtype"
-    ]
+      "cancer_subtype",
+      "recommended_treatment",
+      "description",
+      "patient_notes"
+    ],
+    "timestamp": "2025-05-14T01:41:50.811372",
+    "change_explanations": {
+      "cancer_subtype": "Changed from 'Endometrioid adenocarcinoma' to 'Uterine serous carcinoma'. Reason: Subtype incorrectly identified as endometrioid; report favors serous component.",
+      "recommended_treatment": "Changed from 'Not specified' to 'Adjuvant platinum-based chemotherapy and vaginal brachytherapy'. Reason: Not specified is not aligned with NCCN guidelines for high-grade uterine serous carcinoma Stage IA.",
+      "description": "Changed from 'High-grade endometrioid adenocarcinoma confined to the endometrium with extensive lymphovascular invasion; no myometrial invasion, negative pelvic and para-aortic lymph nodes. Surgical margins, cervix, parametria, ovaries, and fallopian tubes are free of tumor.' to 'High-grade uterine serous carcinoma confined to the endometrium (pT1a) with extensive lymphovascular space invasion; no myometrial invasion, negative pelvic and para-aortic lymph nodes; surgical margins, cervix, parametria, ovaries, and fallopian tubes are free of tumor.'. Reason: Describes Endometrioid adenocarcinoma instead of serous histology.",
+      "patient_notes": "Changed from 'Your results show a high-grade cancer limited to the inner lining of your uterus with no spread to muscle or lymph nodes. All margins are clear, and no cancer was found in the removed lymph nodes or ovaries. Your care team will review these findings and discuss whether you need additional treatment or close monitoring based on your individual situation.' to 'Your results show a high-grade serous cancer limited to the inner lining of your uterus with no spread to the muscle or lymph nodes. All margins are clear, and no cancer was found in the removed lymph nodes or ovaries. Based on current guidelines for this type and stage of uterine cancer, we recommend adjuvant chemotherapy with a platinum-based regimen and localized vaginal radiation (brachytherapy) to reduce the risk of recurrence.'. Reason: Does not mention recommended adjuvant therapy; histology mischaracterized."
+    }
   }
 }

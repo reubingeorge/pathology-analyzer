@@ -1,14 +1,53 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IIIA",
-  "Final Pathologic Stage": "pT3a pN0 pM0",
-  "Recommended Treatment": "Adjuvant combination of chemotherapy (carboplatin/paclitaxel) and radiation therapy (pelvic external beam radiation and vaginal brachytherapy) per NCCN guidelines for stage III endometrial carcinoma.",
-  "Description": "Surgical pathology reveals FIGO grade 3 endometrioid adenocarcinoma of the uterus with full\u2010thickness myometrial invasion, serosal penetration, lymphovascular and perineural invasion, and tumor involvement of the intrauterine fallopian tube, with no nodal metastases, corresponding to stage IIIA (pT3a pN0).",
-  "Patient Notes": "This report shows that you have a high\u2010grade endometrial cancer that extended through the muscle of your uterus to its outer surface but was not found in the lymph nodes. To lower the risk of the cancer coming back, your care team recommends a combination of chemotherapy with carboplatin and paclitaxel plus radiation treatments, including both pelvic radiation and a vaginal brachytherapy boost. This treatment plan follows national guidelines for your specific cancer stage and type.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IIIA",
+  "pathologic_stage": "pT3a pN0",
+  "recommended_treatment": "Systemic therapy plus external beam radiation therapy and vaginal brachytherapy",
+  "description": "High-grade endometrioid adenocarcinoma with full-thickness myometrial invasion, serosal penetration, and lymphovascular invasion, with no nodal metastases.",
+  "patient_notes": "Your surgery showed endometrial cancer that has spread through the uterine muscle to the outer surface. The cancer has not spread to lymph nodes. Recommended treatment includes chemotherapy and targeted radiation therapy to reduce the risk of recurrence.",
   "verification": {
     "passed": true,
-    "confidence": 0.9,
-    "assessment": "The extracted data accurately reflects the key pathologic findings, stage grouping, and guideline\u2010based treatment recommendation for high\u2010grade endometrioid adenocarcinoma with serosal and adnexal involvement."
+    "confidence": 0.92,
+    "assessment": "The extracted staging is accurate: full\u2010thickness myometrial invasion with serosal penetration and no nodal metastases corresponds to pT3a N0 and FIGO IIIA. All other fields correctly reflect the pathology findings and NCCN guideline recommendations.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.98,
+        "issues": "None"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": "None"
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": "None"
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "None"
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.93,
+        "issues": "None"
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:39:34.965725"
   }
 }

@@ -1,14 +1,53 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "IA",
-  "pathologic_stage": "pT1a pN0 (FIGO IA)",
-  "recommended_treatment": "Adjuvant vaginal cuff brachytherapy per NCCN guidelines for stage IA, grade 3 endometrioid endometrial carcinoma",
-  "description": "Surgical pathology of a hysterectomy specimen reveals a 5.0\u00d72.7 cm grade 3 endometrioid adenocarcinoma of the endometrium with 0.7 cm myometrial invasion (2.8 cm thickness), focal lymphovascular invasion, negative cervical, serosal, parametrial margins, and negative pelvic and para-aortic lymph nodes (pT1a pN0, FIGO IA).",
-  "patient_notes": "Your report shows a high-grade endometrial cancer confined to the inner layer of the uterus, with no cancer spread to nearby lymph nodes. We recommend a targeted internal radiation treatment (vaginal brachytherapy) to lower the chance of recurrence. This treatment is well tolerated and focuses radiation where it\u2019s most needed. Participation in a clinical trial is also an option you may discuss with your care team.",
+  "figo_stage": "FIGO IA",
+  "pathologic_stage": "pT1a N0",
+  "recommended_treatment": "Vaginal brachytherapy",
+  "description": "Grade 3 endometrioid adenocarcinoma of the endometrium measuring 5.0 x 2.7 cm with 0.7 cm myometrial invasion (FIGO IA), no cervical or nodal involvement, and focal lymphovascular space invasion, margins negative.",
+  "patient_notes": "Your report shows an early-stage uterine cancer confined to the inner layer of the uterus without spread to lymph nodes or surrounding structures. The tumor was completely removed with surgery, and all surgical margins are clear. Because this is a higher-grade tumor, we recommend targeted vaginal radiation (brachytherapy) to lower the chance of recurrence. This treatment focuses on the upper part of the vagina and helps protect healthy tissues.",
   "verification": {
     "passed": true,
-    "confidence": 0.92,
-    "assessment": "The extraction is complete and accurate. All key diagnostic data, staging, and treatment recommendation align with the source pathology report and NCCN guidance for stage IA, grade 3 endometrioid endometrial carcinoma."
+    "confidence": 0.95,
+    "assessment": "FIGO IA (myometrial invasion <50%) and pT1a N0 staging are accurate and consistent. Grade 3 disease with focal LVSI supports vaginal brachytherapy per NCCN guidelines for stage IA endometrioid adenocarcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:47:28.859171"
   }
 }

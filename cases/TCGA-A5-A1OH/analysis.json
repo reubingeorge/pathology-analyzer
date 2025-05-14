@@ -1,14 +1,53 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Uterine serous carcinoma",
-  "FIGO Stage": "Stage IVB",
-  "Final Pathologic Stage": "pT3a pNX pM1 (IVB)",
-  "Recommended Treatment": "Per NCCN guidelines for stage III\u2013IV uterine serous carcinoma: platinum-taxane\u2013based systemic chemotherapy (eg, carboplatin/paclitaxel) with consideration of adjuvant external beam pelvic radiation therapy and vaginal brachytherapy.",
-  "Description": "Surgical pathology demonstrates high-grade uterine papillary serous carcinoma with full-thickness myometrial and serosal invasion, extensive lymphovascular space invasion, cervical stromal involvement, and omental metastases consistent with stage IVB disease.",
-  "Patient Notes": "Your report shows a high-grade uterine cancer called serous carcinoma that has spread beyond the uterus to the tissue lining your abdomen (omentum). You have already had surgery to remove the uterus, fallopian tubes, and ovaries. The next step is treatment with chemotherapy (a combination of carboplatin and paclitaxel), and radiation therapy may also be recommended to lower the chance of the cancer coming back.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Uterine serous carcinoma",
+  "figo_stage": "IVB",
+  "pathologic_stage": "pT3a pNX pM1",
+  "recommended_treatment": "Systemic therapy with or without external beam radiation therapy",
+  "description": "High-grade uterine serous carcinoma with full-thickness myometrial invasion, cervical stromal involvement, serosal extension, and omental metastases consistent with pT3a pNX pM1 (FIGO IVB).",
+  "patient_notes": "This report shows a high-grade uterine cancer that has spread to the lining of the abdomen (omentum) and cervix. You have stage IVB disease, and we recommend systemic chemotherapy with consideration of radiation therapy. We will work together to plan your treatment and support you throughout the process.",
   "verification": {
     "passed": true,
-    "confidence": 0.9,
-    "assessment": "The extracted information accurately reflects the elements of the pathology report and is consistent with NCCN guideline\u2013based treatment recommendations."
+    "confidence": 0.95,
+    "assessment": "All extracted fields are accurate; FIGO IVB staging and pT3a pNX pM1 pathologic staging are correctly identified, and treatment recommendation aligns with NCCN guidelines for Stage IVB uterine serous carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.98,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.98,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:38:37.338309"
   }
 }

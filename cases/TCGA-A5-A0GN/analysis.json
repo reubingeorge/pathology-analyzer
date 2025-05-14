@@ -1,55 +1,58 @@
 {
-  "organ_type": "Uterine cancer",
+  "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
   "figo_stage": "IB",
-  "pathologic_stage": "pT1c pN0 pMx",
-  "recommended_treatment": "Adjuvant vaginal brachytherapy (Category 2A) is recommended for stage IB endometrial cancer with LVSI.",
-  "description": "Surgical pathology of a hysterectomy reveals a 5.2 cm FIGO grade 1 endometrioid endometrial carcinoma with 56% myometrial invasion and lymphovascular invasion, with negative margins and lymph nodes.",
-  "patient_notes": "Your low\u2010grade endometrial cancer was completely removed with clear margins and no lymph node involvement. Because the tumor invaded more than half of the uterine muscle and lymphovascular invasion is present, your care team recommends a short course of internal vaginal radiation (brachytherapy) to reduce the chance of recurrence.",
+  "pathologic_stage": "pT1b pN0 pMx",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy",
+  "description": "Primary well-differentiated endometrioid adenocarcinoma of the endometrium measuring 5.2 cm with 56% myometrial invasion and lymphovascular invasion; surgical margins, cervix, and lymph nodes are negative.",
+  "patient_notes": "Your report shows endometrial cancer confined to the uterus with no lymph node spread. The tumor invaded just over half of the uterine muscle and was removed completely. Because of vessel involvement, a targeted internal radiation treatment (vaginal brachytherapy) is recommended to reduce the risk of recurrence.",
   "verification": {
     "passed": false,
-    "confidence": 0.75,
-    "assessment": "The extraction captured the core pathologic findings accurately, but the treatment recommendation and patient\u2010facing summary need adjustment to reflect the presence of LVSI and guideline guidance against observation alone in this setting.",
+    "confidence": 0.9,
+    "assessment": "All extracted fields are correct; staging is accurately determined as FIGO stage IB corresponding to pT1c pN0 pMx; treatment recommendation aligns with NCCN guidelines for stage IB with lymphovascular invasion present. Medical inference validation identified issues: 1. Subtype 'Endometrioid adenocarcinoma' is allowed. 2. 56% myometrial invasion defines FIGO IB and pT1b, not pT1c. 3. pN0 and pMx correctly reflect negative nodes and unknown metastasis. 4. Adjuvant vaginal brachytherapy is appropriate for intermediate\u2010risk stage IB, grade 1 with LVSI.",
     "field_issues": {
       "cancer_organ_type": {
         "correct": true,
         "confidence": 0.95,
-        "issues": "The report describes an endometrial carcinoma of the uterus. \u2018Uterine cancer\u2019 is acceptable although \u2018endometrial cancer\u2019 would be more specific."
+        "issues": "No issues identified."
       },
       "cancer_subtype": {
         "correct": true,
-        "confidence": 0.98,
-        "issues": "Matches \u2018endometrioid type\u2019 adenocarcinoma in the report."
+        "confidence": 0.95,
+        "issues": "No issues identified."
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "FIGO stage IB is correctly inferred from >50% myometrial invasion. The report itself did not list a FIGO stage but did list FIGO grade."
+        "confidence": 0.95,
+        "issues": "No issues identified."
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.8,
-        "issues": "Matches the AJCC notation \u2018pTlc pN0 pMx\u2019 in the report. (Note: T1c is not standard FIGO nomenclature but reflects what the report recorded.)"
+        "confidence": 0.95,
+        "issues": "No issues identified."
       },
       "recommended_treatment": {
-        "correct": false,
-        "confidence": 0.6,
-        "issues": "For stage IB with lymphovascular invasion, NCCN guidelines favor adjuvant vaginal brachytherapy (Category 2A). Observation alone is generally reserved for very low\u2010risk patients without LVSI."
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "No issues identified."
       },
       "description": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "Accurately summarizes size, grade, depth of invasion, LVSI status, margins, and node negativity."
+        "confidence": 0.95,
+        "issues": "No issues identified."
       },
       "patient_notes": {
-        "correct": false,
-        "confidence": 0.7,
-        "issues": "The note\u2019s language about \u2018very low risk\u2019 surveillance is misleading given the presence of LVSI. A stronger recommendation for vaginal brachytherapy should be reflected."
+        "correct": true,
+        "confidence": 0.95,
+        "issues": "No issues identified."
       }
     },
     "incorrect_fields": [
-      "recommended_treatment",
-      "patient_notes"
-    ]
+      "pathologic_stage"
+    ],
+    "timestamp": "2025-05-14T01:25:24.961974",
+    "change_explanations": {
+      "pathologic_stage": "Changed from 'pT1c pN0 pMx' to 'pT1b pN0 pMx'. Reason: No issues identified."
+    }
   }
 }

@@ -1,14 +1,53 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "IA, Grade 1",
-  "final_pathologic_stage": "pT1a pN0",
-  "recommended_treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, grade 1 endometrioid endometrial carcinoma without lymphovascular invasion",
-  "description": "The surgical pathology reveals a well-differentiated (FIGO grade 1) endometrioid adenocarcinoma confined to the endometrium with no myometrial or lymphovascular invasion; all examined lymph nodes and pelvic washings are negative, corresponding to AJCC stage pT1a pN0.",
-  "patient_notes": "Your report shows an early-stage cancer of the uterine lining that is low grade and has not spread beyond the inner layer or to lymph nodes. No additional treatments like radiation or chemotherapy are needed at this time. We will monitor you with regular follow-up visits and imaging as recommended by guideline-based care.",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a N0",
+  "recommended_treatment": "Observation",
+  "description": "Well-differentiated FIGO grade 1 endometrioid adenocarcinoma confined to the endometrium without myometrial or lymphovascular invasion and negative lymph nodes (pT1a N0).",
+  "patient_notes": "Your report shows a low-grade endometrial cancer confined to the uterine lining with no spread to lymph nodes. No further treatment beyond your surgery is typically necessary. We recommend close monitoring with regular follow-up appointments.",
   "verification": {
     "passed": true,
-    "confidence": 0.92,
-    "assessment": "The extracted data accurately reflects the final pathology report and aligns with NCCN recommendations. No substantive errors were found."
+    "confidence": 0.95,
+    "assessment": "Staging is accurate: tumor confined to endometrium without myometrial or lymphovascular invasion and negative nodes corresponds to FIGO IA and pT1a N0. Observation aligns with guidelines.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:13:54.974232"
   }
 }

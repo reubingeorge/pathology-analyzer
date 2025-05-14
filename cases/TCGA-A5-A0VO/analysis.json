@@ -1,14 +1,58 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "figo_stage": "IB",
-  "final_pathologic_stage": "pT1b pN0 pM0",
-  "recommended_treatment": "Adjuvant radiation therapy with vaginal brachytherapy (\u00b1 external beam radiation therapy) per NCCN guidelines for Stage IB, grade 2 endometrioid adenocarcinoma with LVSI.",
-  "description": "Endometrial endometrioid adenocarcinoma, papillary variant, FIGO grade II, with tumor invading more than half the myometrium (stage IB, pT1b pN0). No cervical or nodal metastases identified; vascular invasion present.",
-  "patient_notes": "The report shows that you have an endometrial adenocarcinoma that has grown into the muscular layer of the uterus but has not spread to lymph nodes or other organs. This is classified as stage IB, which means deeper invasion but no distant spread. To reduce the chance of recurrence, we recommend targeted radiation inside the vagina (brachytherapy), and sometimes external beam radiation, following your surgery. These treatments aim to eliminate any remaining cancer cells in the pelvic area.",
+  "figo_stage": "Stage IB",
+  "pathologic_stage": "pT1b pN0",
+  "recommended_treatment": "Vaginal brachytherapy",
+  "description": "Robotic-assisted laparoscopic vaginal hysterectomy pathology revealed a 4.0 cm FIGO grade II papillary endometrioid adenocarcinoma with >50% myometrial invasion, no cervical involvement, and negative lymph nodes (pT1b pN0).",
+  "patient_notes": "Your surgery removed the uterus and surrounding tissues, and the pathology showed a type of uterine cancer confined to the uterus with no spread to the lymph nodes. Because the cancer invaded more than half of the muscle layer, your care team may recommend follow-up treatments such as radiation therapy to reduce the risk of recurrence. We will work with you to review and discuss your personalized treatment plan and next steps.",
   "verification": {
-    "passed": true,
-    "confidence": 0.95,
-    "assessment": "The extracted data accurately reflect the pathology report and align with NCCN guidance. Only minor inference (pM0) was made but is standard in this context."
+    "passed": false,
+    "confidence": 0.9,
+    "assessment": "Staging is accurate. Adjuvant vaginal brachytherapy should be recommended for Stage IB, grade II endometrioid adenocarcinoma per NCCN guidelines.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Missing NCCN-recommended adjuvant therapy for Stage IB, grade II endometrioid carcinoma."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:34:50.332398",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Vaginal brachytherapy'. Reason: Missing NCCN-recommended adjuvant therapy for Stage IB, grade II endometrioid carcinoma."
+    }
   }
 }

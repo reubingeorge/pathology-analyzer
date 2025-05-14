@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "Stage IA (FIGO grade 1)",
-  "Final Pathologic Stage": "pT1a pN0 (AJCC Stage IA)",
-  "Recommended Treatment": "Observation (no adjuvant therapy) per NCCN guidelines for Stage IA, low-risk endometrioid endometrial carcinoma",
-  "Description": "Surgical pathology of a total hysterectomy revealed a primary low-grade endometrioid adenocarcinoma confined to the endometrium with <10% myometrial invasion, no lymphovascular invasion, and negative lymph nodes (pT1a pN0, Stage IA). The fallopian tubes, cervix, and parametrial tissues are free of tumor.",
-  "Patient Notes": "Your surgery removed a low-grade uterine cancer that was confined to the lining of the uterus without any spread to lymph nodes, which corresponds to an early stage (IA). Because this is a low-risk tumor, no further treatments like chemotherapy or radiation are required at this time. We will monitor you with regular check-ups to ensure your continued health.",
+  "cancer_organ_type": "Uterus",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Observation",
+  "description": "The surgical pathology reveals a FIGO grade 1 endometrioid adenocarcinoma limited to the endometrium with less than 10% myometrial invasion and no lymphovascular or nodal involvement.",
+  "patient_notes": "The surgery removed a small, low-grade uterine cancer that did not spread beyond the uterus. No cancer was found in the lymph nodes. Based on current guidelines, no additional treatment is needed and you will be monitored with routine follow-up visits.",
   "verification": {
-    "passed": true,
-    "confidence": 0.85,
-    "assessment": "The extraction accurately reflects the key pathologic findings, staging, and guideline-based management. Minor details such as precise grade notation, tumor size, and formal margin statement were not included but do not alter the core accuracy."
+    "passed": false,
+    "confidence": 0.95,
+    "assessment": "Staging and treatment recommendations are accurate for a FIGO IA endometrioid adenocarcinoma (pT1a pN0), with superficial myometrial invasion and no nodal involvement.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "Organ type must match the provided list exactly; should be 'Uterus' rather than 'Uterine cancer'."
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.99,
+        "issues": ""
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.95,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "cancer_organ_type"
+    ],
+    "timestamp": "2025-05-14T01:39:06.215266",
+    "change_explanations": {
+      "cancer_organ_type": "Changed from 'Uterine cancer' to 'Uterus'. Reason: Organ type must match the provided list exactly; should be 'Uterus' rather than 'Uterine cancer'."
+    }
   }
 }

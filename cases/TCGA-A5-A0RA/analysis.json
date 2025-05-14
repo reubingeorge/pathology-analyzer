@@ -1,14 +1,58 @@
 {
-  "Cancer Organ Type": "Uterine cancer",
-  "Cancer Subtype": "Endometrioid adenocarcinoma",
-  "FIGO Stage": "FIGO Stage IC (>50% myometrial invasion)",
-  "Final Pathologic Stage": "pT1c pN0 (no nodal metastasis)",
-  "Recommended Treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for stage I endometrial adenocarcinoma (grade 2, >50% myometrial invasion).",
-  "Description": "Surgical pathology reveals a grade 2 endometrioid adenocarcinoma of the uterus with deep (75\u201380%) myometrial invasion and no lymph node metastases, staged as pT1c pN0 (FIGO IC).",
-  "Patient Notes": "Your pathology report shows endometrial cancer that was confined to the uterus and has not spread to lymph nodes. The tumor was grade 2 and invaded more than half of the uterine muscle wall. You have had a hysterectomy with removal of both ovaries and tubes. Based on current NCCN guidelines, we recommend adjuvant vaginal brachytherapy to reduce the risk of local recurrence.",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
+  "figo_stage": "IC",
+  "pathologic_stage": "pT1c, pN0",
+  "recommended_treatment": "Vaginal brachytherapy per NCCN guidelines for stage IC (pT1c) grade II endometrioid adenocarcinoma",
+  "description": "Endometrioid adenocarcinoma of the uterus, grade II, with tumor invading greater than 50% of the myometrium and no lymph node metastasis (pT1c, pN0, FIGO stage IC).",
+  "patient_notes": "Your report shows uterine endometrial cancer that invaded more than half of the muscle layer but did not spread to nearby lymph nodes or other organs. This is stage IC endometrioid adenocarcinoma. Your care team will review your results and discuss the most appropriate treatment plan based on current guidelines.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.9,
-    "assessment": "The extraction accurately captures the key diagnostic, staging, and treatment recommendation fields. For completeness, lymphovascular invasion status could be added, but no critical errors were identified."
+    "assessment": "Accurate staging identification but omission of recommended adjuvant therapy; NCCN guidelines recommend vaginal brachytherapy for intermediate-risk stage IC, grade II endometrioid carcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "recommended_treatment": {
+        "correct": false,
+        "confidence": 0.9,
+        "issues": "No adjuvant treatment recommendation provided despite intermediate-risk disease per NCCN guidelines."
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": "None"
+      }
+    },
+    "incorrect_fields": [
+      "recommended_treatment"
+    ],
+    "timestamp": "2025-05-14T01:34:06.726814",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Vaginal brachytherapy per NCCN guidelines for stage IC (pT1c) grade II endometrioid adenocarcinoma'. Reason: No adjuvant treatment recommendation provided despite intermediate-risk disease per NCCN guidelines."
+    }
   }
 }

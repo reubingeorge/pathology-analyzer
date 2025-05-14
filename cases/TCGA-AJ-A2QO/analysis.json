@@ -1,57 +1,60 @@
 {
-  "cancer_organ_type": "Endometrial cancer",
-  "cancer_subtype": "Not specified in provided report (microscopic review needed)",
+  "cancer_organ_type": "Uterine cancer",
+  "cancer_subtype": "Endometrioid adenocarcinoma",
   "figo_stage": "IB",
-  "final_pathologic_stage": "pT1b N0 M0",
-  "recommended_treatment": "Adjuvant radiation therapy with vaginal brachytherapy or pelvic external beam radiation therapy\u2009\u00b1\u2009vaginal brachytherapy",
-  "description": "Friable granular endometrial lesion measuring 3.5 \u00d7 3.3 \u00d7 0.9 cm with >50% myometrial invasion (2.4 cm of 4.7 cm), negative parametria, and 0/17 lymph nodes involved; consistent with FIGO IB (pT1b N0).",
-  "patient_notes": "The surgical pathology confirms endometrial carcinoma measuring 3.5 \u00d7 3.3 \u00d7 0.9 cm with deep myometrial invasion but no nodal metastases. To reduce recurrence risk, we recommend adjuvant radiation therapy\u2014either vaginal brachytherapy alone or combined pelvic external beam radiation with a brachytherapy boost. Further pathology details, including grade and LVSI status, will guide final recommendations.",
+  "pathologic_stage": "pT1b N0",
+  "recommended_treatment": "Adjuvant vaginal brachytherapy combined with platinum-based chemotherapy",
+  "description": "High-grade endometrioid adenocarcinoma of the endometrium measuring 3.5 x 3.3 x 1.6 cm with more than 50% myometrial invasion, focal lymphovascular invasion, negative cervical and parametrial margins, and no lymph node metastasis.",
+  "patient_notes": "Your pathology shows a high-grade endometrial cancer that invaded deeply into the uterine wall (stage IB). To reduce the risk of recurrence, adjuvant vaginal brachytherapy combined with chemotherapy is recommended. Your doctors will discuss treatment details and next steps.",
   "verification": {
     "passed": false,
-    "confidence": 0.78,
-    "assessment": "The extraction captured stage and treatment recommendation correctly but introduced unsupported details (tumor size, subtype, LVSI) and omitted key pathologic elements. Substantial corrections needed before use.",
+    "confidence": 0.85,
+    "assessment": "FIGO and pathologic staging are accurate as stage IB (pT1b N0).",
     "field_issues": {
       "cancer_organ_type": {
-        "correct": false,
+        "correct": true,
         "confidence": 0.9,
-        "issues": "The report specifies 'Endometrial cancer'; the extracted 'Uterine cancer' is too generic. It should be Endometrial (uterine corpus) cancer."
+        "issues": ""
       },
       "cancer_subtype": {
-        "correct": false,
-        "confidence": 0.8,
-        "issues": "The snippet provided does not explicitly state 'endometrioid adenocarcinoma.' Without a microscopic subtype in the text, assignment of subtype is unsupported."
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
       },
       "figo_stage": {
         "correct": true,
-        "confidence": 0.95,
-        "issues": "FIGO IB is correct given >50% myometrial invasion (2.4 cm of 4.7 cm thickness)."
+        "confidence": 1.0,
+        "issues": ""
       },
       "pathologic_stage": {
         "correct": true,
-        "confidence": 0.9,
-        "issues": "pT1b N0 M0 corresponds to FIGO IB with no nodal metastasis; M0 is assumed."
+        "confidence": 1.0,
+        "issues": ""
       },
       "recommended_treatment": {
-        "correct": true,
-        "confidence": 0.8,
-        "issues": "Adjuvant radiation with vaginal brachytherapy \u00b1 pelvic EBRT is consistent with NCCN guidance for stage IB high\u2013intermediate/high-risk disease."
+        "correct": false,
+        "confidence": 1.0,
+        "issues": "Recommended treatment should align with NCCN guidelines for high-grade stage IB endometrioid adenocarcinoma"
       },
       "description": {
-        "correct": false,
-        "confidence": 0.9,
-        "issues": "Tumor dimensions are misstated as 3.5 \u00d7 3.3 \u00d7 1.6 cm; gross report gives 3.5 \u00d7 3.3 \u00d7 0.9 cm. LVSI is asserted but not in the provided text. Lymph node count (0/18) may not match the nodes described."
+        "correct": true,
+        "confidence": 0.8,
+        "issues": ""
       },
       "patient_notes": {
         "correct": false,
-        "confidence": 0.85,
-        "issues": "Notes mirror the flawed description (incorrect size, unverified LVSI). They should reflect the accurate measurements and reported findings."
+        "confidence": 0.8,
+        "issues": "Patient notes reflect lack of adjuvant recommendation, inconsistent with NCCN guidelines for stage IB"
       }
     },
     "incorrect_fields": [
-      "cancer_organ_type",
-      "cancer_subtype",
-      "description",
+      "recommended_treatment",
       "patient_notes"
-    ]
+    ],
+    "timestamp": "2025-05-14T01:50:24.940208",
+    "change_explanations": {
+      "recommended_treatment": "Changed from 'Not specified' to 'Adjuvant vaginal brachytherapy combined with platinum-based chemotherapy'. Reason: Recommended treatment should align with NCCN guidelines for high-grade stage IB endometrioid adenocarcinoma",
+      "patient_notes": "Changed from 'The report shows a high-grade endometrial cancer that was fully removed and had invaded more than half of the uterine wall but did not spread to lymph nodes. It is classified as stage IB, meaning it was still confined to the uterus. Based on current guidelines, no specific adjuvant treatment recommendation is provided here. Your doctors will discuss any needed follow-up, which may include imaging or specialist consultations to monitor your recovery.' to 'Your pathology shows a high-grade endometrial cancer that invaded deeply into the uterine wall (stage IB). To reduce the risk of recurrence, adjuvant vaginal brachytherapy combined with chemotherapy is recommended. Your doctors will discuss treatment details and next steps.'. Reason: Patient notes reflect lack of adjuvant recommendation, inconsistent with NCCN guidelines for stage IB"
+    }
   }
 }

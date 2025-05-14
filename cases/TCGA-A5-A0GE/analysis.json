@@ -1,14 +1,60 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "FIGO_stage": "Stage IB",
-  "final_pathologic_stage": "pT1b N0 M0",
-  "recommended_treatment": "Adjuvant vaginal brachytherapy per NCCN guidelines for intermediate-risk Stage IB, grade 2 endometrioid endometrial carcinoma",
-  "description": "Pathology demonstrates a FIGO grade 2 endometrioid adenocarcinoma of the endometrium measuring 3.4\u00d72.9 cm with focal myometrial invasion (0.7 cm of 2.2 cm) and no cervical, adnexal, nodal, or distant spread (pT1b N0 M0).",
-  "patient_notes": "Your pathology report shows a common type of uterine cancer called endometrioid adenocarcinoma that invaded just under half of the muscle layer of the uterus. The tumor was completely removed with no cancer found in surrounding structures or lymph nodes. Based on national guidelines, the recommended next step is localized internal radiation (vaginal brachytherapy) to lower the chance of the cancer coming back. This treatment is focused and minimizes exposure to other tissues.",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0 pM0",
+  "recommended_treatment": "Vaginal brachytherapy",
+  "description": "Endometrioid endometrial adenocarcinoma grade 2 measuring 3.4 x 2.9 cm with myometrial invasion of less than half the myometrium, negative cervical, parametrial, adnexal and lymph node involvement.",
+  "patient_notes": "The pathology report shows a grade 2 cancer of the uterine lining that has not spread beyond the muscle wall and lymph nodes. The surgical removal was complete and your cancer is at an early stage. Your care team recommends follow-up treatment with vaginal radiation to reduce the risk of recurrence. We will monitor you closely with regular check-ups.",
   "verification": {
-    "passed": true,
+    "passed": false,
     "confidence": 0.95,
-    "assessment": "Extraction is accurate, complete, and aligned with the pathology report and NCCN guidance."
+    "assessment": "FIGO and pathologic staging should be IA/pT1a due to <50% myometrial invasion.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": ""
+      },
+      "figo_stage": {
+        "correct": false,
+        "confidence": 0.99,
+        "issues": "Tumor invades less than half of the myometrium, which corresponds to FIGO IA, not IB."
+      },
+      "pathologic_stage": {
+        "correct": false,
+        "confidence": 0.99,
+        "issues": "Depth of invasion <50% myometrium implies pT1a, not pT1b."
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "description": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 0.9,
+        "issues": ""
+      }
+    },
+    "incorrect_fields": [
+      "figo_stage",
+      "pathologic_stage"
+    ],
+    "timestamp": "2025-05-14T01:21:26.537250",
+    "change_explanations": {
+      "figo_stage": "Changed from 'IB' to 'IA'. Reason: Tumor invades less than half of the myometrium, which corresponds to FIGO IA, not IB.",
+      "pathologic_stage": "Changed from 'pT1b pN0 pM0' to 'pT1a pN0 pM0'. Reason: Depth of invasion <50% myometrium implies pT1a, not pT1b."
+    }
   }
 }

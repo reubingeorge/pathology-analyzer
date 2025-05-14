@@ -1,14 +1,53 @@
 {
   "cancer_organ_type": "Uterine cancer",
   "cancer_subtype": "Endometrioid adenocarcinoma",
-  "FIGO_stage": "IA",
-  "final_pathologic_stage": "pT1a N0 M0",
-  "recommended_treatment": "Per NCCN guidelines for Stage IA, grade 2, endometrioid endometrial cancer without LVSI: observation (surveillance) or vaginal brachytherapy.",
-  "description": "Hysterectomy with bilateral salpingo-oophorectomy revealed a FIGO grade 2 endometrioid adenocarcinoma limited to the endometrium with <50% myometrial invasion, no lymphovascular invasion, and negative pelvic and para-aortic lymph nodes (pT1a N0).",
-  "patient_notes": "Your surgery removed a low-grade cancer confined to the lining of the uterus and showed no spread to lymph nodes or other tissues. This is an early stage (Stage IA) cancer with a very good prognosis. Based on guidelines, you may only need careful follow-up or a small targeted radiation treatment to the vaginal cuff. We will discuss these options and support you through monitoring and any additional care as needed.",
+  "figo_stage": "IA",
+  "pathologic_stage": "pT1a pN0",
+  "recommended_treatment": "Observation or vaginal brachytherapy",
+  "description": "Endometrioid adenocarcinoma grade 2 with less than half myometrial invasion and no lymph node involvement corresponds to FIGO stage IA (pT1a pN0). The patient underwent hysterectomy with bilateral salpingo-oophorectomy, and margins and nodes are negative.",
+  "patient_notes": "Your report shows a grade 2 endometrial cancer confined to the upper wall of the uterus with no lymph node spread. You have had surgery to remove the uterus and ovaries with no remaining cancer. Given the low stage, we will monitor you closely and may recommend a small internal vaginal radiation treatment to lower the chance of recurrence. Follow-up visits and imaging will be scheduled regularly.",
   "verification": {
     "passed": true,
-    "confidence": 0.9,
-    "assessment": "The extraction accurately captures the key oncologic details, staging, and guideline-based recommendation. All fields align with the report and NCCN guidance."
+    "confidence": 0.95,
+    "assessment": "All extracted staging and recommendations are accurate and consistent with the pathology report and NCCN guidelines for FIGO stage IA endometrioid adenocarcinoma.",
+    "field_issues": {
+      "cancer_organ_type": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "cancer_subtype": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "figo_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "pathologic_stage": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "recommended_treatment": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "description": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      },
+      "patient_notes": {
+        "correct": true,
+        "confidence": 1.0,
+        "issues": "No issues"
+      }
+    },
+    "incorrect_fields": [],
+    "timestamp": "2025-05-14T01:14:34.792011"
   }
 }
